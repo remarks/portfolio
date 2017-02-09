@@ -39,14 +39,14 @@ const large = (...args) => css `
 `
 
 injectGlobal `
-  @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,900');
 
   *, *:before, *:after {
     box-sizing: border-box;
   }
 
   body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
     margin: 0;
     padding: 0;
@@ -54,7 +54,7 @@ injectGlobal `
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
     margin: 0 0 0.5em 0;
     line-height: 1.3;
   }
@@ -109,8 +109,13 @@ export const Link = styled.a `
   padding: ${spacing.quarter} ${spacing.half};
   background: ${colors.black};
   color: ${colors.white};
+  border-radius: ${spacing.double};
   text-decoration: none;
   ${small ` ${props => props.git ? 'display: none' : null } `};
+
+  &:hover {
+    background: blue;
+  }
 `
 
 export const Avatar = styled.img `
