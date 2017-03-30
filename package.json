@@ -1,29 +1,18 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
-  "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "gatsby": "^0.12.6",
-    "highlight.js": "^9.6.0",
-    "history": "^2.0.2",
-    "react-helmet": "^3.1.0",
-    "react-markdown": "^2.4.4",
-    "styled-components": "^1.4.3"
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   },
   "devDependencies": {
-    "gh-pages": "^0.11.0"
+    "react-scripts": "0.9.5"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
   "scripts": {
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve-build",
-    "deploy": "gatsby build --prefix-links && gh-pages -d public",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
