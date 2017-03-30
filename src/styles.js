@@ -9,6 +9,7 @@ const medium = (...args) => css`
 
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+  @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
   *, *:before, *:after {
     box-sizing: border-box;
@@ -23,7 +24,7 @@ injectGlobal`
   }
 `;
 
-export const Header = styled.header`
+export const Heading = styled.header`
   position: relative;
   margin-bottom: 20px;
   padding: 40px 20px;
@@ -39,14 +40,18 @@ export const Header = styled.header`
     padding: 40px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     `}
+
+  & a {
+    color: #FFF;
+  }
 `;
 
 export const Brand = styled.a`
   display: block;
   margin-bottom: 5px;
   font-weight: 700;
-  color: #FFF;
   letter-spacing: 0.5px;
   text-decoration: none;
 `;
@@ -62,10 +67,15 @@ export const BrandTag = styled.small`
 `;
 
 export const NavLink = styled(Link)`
-  margin-right: 10px;
+  display: block;
+  margin-right: 15px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
+
+  & span {
+    padding-bottom: 5px;
+  }
 
   &:hover span {
     border-bottom: 2px solid rgba(255, 255, 255, 0.25);
@@ -74,4 +84,20 @@ export const NavLink = styled(Link)`
   ${medium`
     margin-bottom: 10px;
     `}
+`;
+
+export const Social = styled.ul`
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  ${medium`
+    display: block;
+  `}
+
+  & li {
+    display: inline-block;
+    margin-right: 15px;
+  }
 `;
