@@ -1,12 +1,12 @@
 import React from 'react';
-import { Heading, Brand, BrandTag, NavLink, Social } from '../styles';
+import { BrandHeader, Brand, BrandTag, NavLink, Social } from '../styles';
 
 // @TODO: Implement routing
 
 class Header extends React.Component {
   render() {
     return (
-      <Heading>
+      <BrandHeader>
         <Brand href="/">
           Mark Pinero
           <BrandTag>Web Developer</BrandTag>
@@ -22,10 +22,18 @@ class Header extends React.Component {
               <i className="fa fa-twitter" aria-hidden="true" />
             </a>
           </li>
-          <li><i className="fa fa-github" aria-hidden="true" /></li>
-          <li><i className="fa fa-linkedin" aria-hidden="true" /></li>
+          <li>
+            <a href="http://github.com/remarks">
+              <i className="fa fa-github" aria-hidden="true" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/mark-pinero-7430a5129/">
+              <i className="fa fa-linkedin" aria-hidden="true" />
+            </a>
+          </li>
         </Social>
-      </Heading>
+      </BrandHeader>
     );
   }
 }

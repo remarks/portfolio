@@ -1,3 +1,4 @@
+/* eslint-disable */
 import styled, { injectGlobal, css } from 'styled-components';
 import { Link } from 'react-router-dom';
 
@@ -15,16 +16,25 @@ injectGlobal`
     box-sizing: border-box;
   }
 
-  html, body {
+  body {
     margin: 0;
     padding: 0;
     font-family: '-apple-system', Helvetica, Arial, sans-serif;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.5rem;
+
+    ${medium`
+      padding-left: 240px;
+      `}
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 0.5em;
+    line-height: 3rem;
   }
 `;
 
-export const Heading = styled.header`
+export const BrandHeader = styled.header`
   position: relative;
   margin-bottom: 20px;
   padding: 40px 20px;
@@ -99,5 +109,22 @@ export const Social = styled.ul`
   & li {
     display: inline-block;
     margin-right: 15px;
+  }
+`;
+
+export const Section = styled.section`
+  margin: 0 auto;
+  padding: 40px 40px 0;
+  max-width: 900px;
+
+  & h1 {
+    padding-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+  }
+
+  & p {
+    max-width: 600px;
   }
 `;
