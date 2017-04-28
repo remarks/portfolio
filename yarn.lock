@@ -2281,13 +2281,20 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-glamor@^2.20.12:
+glamor@^2.20.12, glamor@^2.20.24:
   version "2.20.24"
   resolved "https://registry.yarnpkg.com/glamor/-/glamor-2.20.24.tgz#a299af2eec687322634ba38e4a0854d8743d2041"
   dependencies:
     babel-runtime "^6.18.0"
     fbjs "^0.8.8"
     object-assign "^4.1.0"
+
+glamorous@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/glamorous/-/glamorous-2.0.1.tgz#5839ab3aefcb5f02297373f31031e88c2960fea0"
+  dependencies:
+    html-tag-names "^1.1.1"
+    svg-tag-names "^1.1.0"
 
 glob-base@^0.3.0:
   version "0.3.0"
@@ -2452,6 +2459,10 @@ html-minifier@^3.1.0:
     relateurl "0.2.x"
     uglify-js "2.8.x"
 
+html-tag-names@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/html-tag-names/-/html-tag-names-1.1.1.tgz#f8a076113f16e393518937f6b3b5d22296755d4a"
+
 html-webpack-plugin@2.24.0:
   version "2.24.0"
   resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-2.24.0.tgz#53697cea79a9f3cd1f8c239ac71f949d5673cacb"
@@ -2536,6 +2547,10 @@ ieee754@^1.1.4:
 ignore@^3.2.0:
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.2.6.tgz#26e8da0644be0bb4cb39516f6c79f0e0f4ffe48c"
+
+image-exists@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/image-exists/-/image-exists-1.1.0.tgz#ba49cccbaddca8cbbf10f89cafd4d1c8ecfd38d0"
 
 imurmurhash@^0.1.4:
   version "0.1.4"
@@ -2761,6 +2776,10 @@ is-resolvable@^1.0.0:
   resolved "https://registry.yarnpkg.com/is-resolvable/-/is-resolvable-1.0.0.tgz#8df57c61ea2e3c501408d100fb013cf8d6e0cc62"
   dependencies:
     tryit "^1.0.1"
+
+is-retina@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/is-retina/-/is-retina-1.0.3.tgz#d7401b286bea2ae37f62477588de504d0b8647e3"
 
 is-stream@^1.0.1:
   version "1.1.0"
@@ -4287,6 +4306,15 @@ react-markdown@^2.4.6:
     commonmark-react-renderer "^4.2.4"
     in-publish "^2.0.0"
 
+react-retina-image@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/react-retina-image/-/react-retina-image-2.0.3.tgz#e53d97f3bb6e2bb845a3f42db0eabeb7c961ad1f"
+  dependencies:
+    array-equal "^1.0.0"
+    image-exists "^1.1.0"
+    is-retina "^1.0.3"
+    object-assign "^4.1.0"
+
 react-router-dom@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.0.0.tgz#4fa4418e14b8cfc5bcc0bdea0c4083fb8c2aef10"
@@ -4946,6 +4974,10 @@ supports-color@^3.1.0, supports-color@^3.1.1, supports-color@^3.1.2, supports-co
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-3.2.3.tgz#65ac0504b3954171d8a64946b2ae3cbb8a5f54f6"
   dependencies:
     has-flag "^1.0.0"
+
+svg-tag-names@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/svg-tag-names/-/svg-tag-names-1.1.0.tgz#24c04db37f2ee2ee28bc619f4e8a25ee21fc0203"
 
 svgo@^0.7.0:
   version "0.7.2"
