@@ -6,6 +6,7 @@ const large = (...args) => css`
   }
 `;
 
+// eslint-disable-next-line
 injectGlobal`
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
@@ -17,7 +18,7 @@ body {
   line-height: 26px;
 
   ${large`
-    line-height: 28px;
+    line-height: 32px;
   `}
 }
 
@@ -90,7 +91,7 @@ export const Container = styled.div`
   `}
 `;
 
-export const Intro = styled.section`
+export const IntroContainer = styled.section`
   ${large`
     flex: 1 1 500px;
     font-size: 20px;
@@ -132,7 +133,7 @@ export const Headline = styled.h2`
 `;
 
 export const Section = styled.section``;
-export const Project = styled.section`
+export const ProjectContainer = styled.section`
   background: ${props => (props.background ? props.background : "")};
   color: ${props => (props.color ? props.color : "inherit")}
   padding: 20px 0;
@@ -144,17 +145,17 @@ export const Project = styled.section`
   }
 `;
 
-export const Images = styled(Container)`
+export const Images = styled.div`
   margin-bottom: 20px;
-  padding: 0;
 
   ${large`
     flex: 1 1 60%;
-    padding: 0;
+    margin-bottom: 0;
   `}
 
   & img {
     max-width: 100%;
+    height: auto;
   }
 `;
 
@@ -176,9 +177,7 @@ export const Title = styled.h3`
 `;
 
 export const Details = styled.p`
-  ${large`
-    line-height: 1em;
-  `}
+  line-height: 26px;
 `;
 
 export const Links = styled.div`

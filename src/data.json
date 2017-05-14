@@ -1,0 +1,41 @@
+{
+  "intro": {
+    "headline": "Hi. I'm Mark Pinero. I'm a full-stack developer from Los Angeles, CA.",
+    "spiel": "I've been a part of the web from the blinkies of Geocities to PHP vulnerabilities to JavaScript fatigue. I studied business and marketing in school while keeping web development as a part-time hobby but want to finally turn it into a full-time career.",
+    "links": {
+      "github": "https://github.com/remarks",
+      "linkedin": "http://google.com",
+      "email": "mailto:markspinero@gmail.com"
+    }
+  },
+  "projects": [
+    {
+      "background": "linear-gradient(135deg, #2D2771 0%, #CF6FAC 100%)",
+      "color": "#fff",
+      "feature": "/images/recap-1@2x.jpg",
+      "title": "K-Pop Recap",
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id egestas nulla, laoreet sodales eros. Vestibulum placerat ornare sagittis. Morbi posuere magna in nulla faucibus, sed molestie felis blandit. Integer porttitor luctus pellentesque. Pellentesque nec lacinia velit, sit amet pretium tellus. Vivamus eget sodales enim. Vestibulum lectus est, efficitur vitae ullamcorper ut, eleifend aliquam arcu. Aenean pretium tortor nisl, ac vulputate nisi sollicitudin quis.",
+      "meta": [
+        "node, mongodb, redis"
+      ],
+      "links": {
+        "url": "http://www.kpoprecap.com",
+        "repo": "red"
+      }
+    },
+    {
+      "background": "linear-gradient(135deg, #2825A7 0%, #8481FF 100%)",
+      "color": "#fff",
+      "feature": "/images/spaces@2x.jpg",
+      "title": "Spaces",
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id egestas nulla, laoreet sodales eros. Vestibulum placerat ornare sagittis. Morbi posuere magna in nulla faucibus, sed molestie felis blandit. Integer porttitor luctus pellentesque. Pellentesque nec lacinia velit, sit amet pretium tellus. Vivamus eget sodales enim. Vestibulum lectus est, efficitur vitae ullamcorper ut, eleifend aliquam arcu. Aenean pretium tortor nisl, ac vulputate nisi sollicitudin quis.",
+      "meta": [
+        "html/css, jquery, apis"
+      ],
+      "links": {
+        "url": "http://remarks.github.io/spaces",
+        "repo": "spaces"
+      }
+    }
+  ]
+}

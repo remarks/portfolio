@@ -1,33 +1,30 @@
 import React from "react";
 import {
   ProjectContainer,
+  Container,
   Images,
+  Description,
   Meta,
   Title,
-  Description,
   Details,
-  Links,
-  Footer
+  Links
 } from "../styles.js";
 
-const Project = ({ images, title, meta, description, links }) => (
-  <ProjectContainer>
+const Project = props => (
+  <ProjectContainer background={props.background} color={props.color}>
     <Container>
       <Images>
-        <img src={recap} style={{ height: "550px", width: "750px" }} />
+        <img src={props.feature} alt={props.title} />
       </Images>
       <Description>
-        <Meta>Node, MongoDB, Redis</Meta>
-        <Title>K-Pop Recap</Title>
-        I've been a part of the web from the blinkies of Geocities to PHP vulnerabilities to JavaScript fatigue. I studied business and marketing in school while keeping web development as a part-time hobby but want to finally turn it into a full-time career.
+        <Meta>{props.meta.map(x => x)}</Meta>
+        <Title>{props.title}</Title>
+        <Details>{props.details}</Details>
         <Links>
-          <a href="/spaces">
+          <a href={props.links.url}>
             <i className="fa fa-link" /> Demo
           </a>
-          <a href="https://github.com/remarks/spaces">
-            <i className="fa fa-file-text" /> Case Study
-          </a>
-          <a href="https://github.com/remarks/spaces">
+          <a href={props.links.repo}>
             <i className="fa fa-github" /> Repo
           </a>
         </Links>
