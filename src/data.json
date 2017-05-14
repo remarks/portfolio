@@ -10,9 +10,23 @@
   },
   "projects": [
     {
+      "background": "linear-gradient(135deg, #f76c19 0%, #ead061 100%)",
+      "color": "#FFF",
+      "feature": "images/recap-2@2x.jpg",
+      "title": "Navi",
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id egestas nulla, laoreet sodales eros. Vestibulum placerat ornare sagittis. Morbi posuere magna in nulla faucibus, sed molestie felis blandit. Integer porttitor luctus pellentesque. Pellentesque nec lacinia velit, sit amet pretium tellus. Vivamus eget sodales enim. Vestibulum lectus est, efficitur vitae ullamcorper ut, eleifend aliquam arcu. Aenean pretium tortor nisl, ac vulputate nisi sollicitudin quis.",
+      "meta": [
+        "react, redux, node, mongodb"
+      ],
+      "links": {
+        "url": "http://navi.netlify.com",
+        "repo": "navi"
+      }
+    },
+    {
       "background": "linear-gradient(135deg, #2D2771 0%, #CF6FAC 100%)",
       "color": "#fff",
-      "feature": "/images/recap-1@2x.jpg",
+      "feature": "images/recap-1@2x.jpg",
       "title": "K-Pop Recap",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id egestas nulla, laoreet sodales eros. Vestibulum placerat ornare sagittis. Morbi posuere magna in nulla faucibus, sed molestie felis blandit. Integer porttitor luctus pellentesque. Pellentesque nec lacinia velit, sit amet pretium tellus. Vivamus eget sodales enim. Vestibulum lectus est, efficitur vitae ullamcorper ut, eleifend aliquam arcu. Aenean pretium tortor nisl, ac vulputate nisi sollicitudin quis.",
       "meta": [
@@ -26,11 +40,11 @@
     {
       "background": "linear-gradient(135deg, #2825A7 0%, #8481FF 100%)",
       "color": "#fff",
-      "feature": "/images/spaces@2x.jpg",
+      "feature": "images/spaces@2x.jpg",
       "title": "Spaces",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id egestas nulla, laoreet sodales eros. Vestibulum placerat ornare sagittis. Morbi posuere magna in nulla faucibus, sed molestie felis blandit. Integer porttitor luctus pellentesque. Pellentesque nec lacinia velit, sit amet pretium tellus. Vivamus eget sodales enim. Vestibulum lectus est, efficitur vitae ullamcorper ut, eleifend aliquam arcu. Aenean pretium tortor nisl, ac vulputate nisi sollicitudin quis.",
       "meta": [
-        "html/css, jquery, apis"
+        "html/css, jquery, third-party api"
       ],
       "links": {
         "url": "http://remarks.github.io/spaces",

@@ -184,7 +184,7 @@ export const Links = styled.div`
   margin-top: 20px;
   ${large`
     flex: 1 1 20%;
-    margin-left: -10px;
+    margin-left: -15px;
   `}
 
   & a {
@@ -192,7 +192,7 @@ export const Links = styled.div`
     font-weight: bold;
 
     ${large`
-      padding: 5px 10px;
+      padding: 5px 15px;
       border: 5px transparent solid;
       border-radius: 10px;
       transition: all 0.3s ease-in-out;
