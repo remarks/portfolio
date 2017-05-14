@@ -1,228 +1,217 @@
-/* eslint-disable */
-import styled, { injectGlobal, css } from 'styled-components';
-import { Link } from 'react-router-dom';
-
-const medium = (...args) => css`
-  @media screen and (min-width: 700px) {
-    ${css(...args)}
-  }
-`;
+import styled, { injectGlobal, css } from "styled-components";
 
 const large = (...args) => css`
-  @media screen and (min-width: 1100px) {
+  @media screen and (min-width: 990px) {
     ${css(...args)}
   }
 `;
 
 injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
-  @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-  *, *:before, *:after {
-    box-sizing: border-box;
-  }
+body {
+  margin: 0;
+  color: rgba(0,0,0,0.7);
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  line-height: 26px;
 
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Work Sans', '-apple-system', Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.4rem;
+  ${large`
+    line-height: 28px;
+  `}
+}
 
-    ${large`
-      padding-left: 240px;
-      `}
-  }
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.75rem;
+  font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+  line-height: 1.3em;
+}
 
-  h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 20px;
-    line-height: 3rem;
-  }
+h1 {
+  font-size: 2em;
+}
 
-  ul, li {
-    margin: 0;
-    padding: 0;
-  }
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+a:link, a:visited {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  border-color: blue;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+.outline {
+  background: rgba(255,0,0,0.1)
+}
 `;
 
-export const BrandHeader = styled.header`
-  position: relative;
-  padding: 40px 20px;
-  background: #111;
-  color: #FFF;
+export const Wrapper = styled.div`
+`;
+
+// padding: 20px;
+// ${large` padding: 40px; `}
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   ${large`
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 240px;
-    margin: 0;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    `}
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 40px 0;
+  `}
+`;
+
+export const Intro = styled.section`
+  ${large`
+    flex: 1 1 500px;
+    font-size: 20px;
+  `}
+`;
+
+export const Contact = styled.div`
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  font-size: 30px;
+
+  & li:not(:first-of-type) {
+      margin: 0 0 0 30px;
+  }
 
   & a {
-    color: #FFF;
+    border-bottom: none;
+  }
+
+  ${large`
+    flex: 1 1 200px;
+    justify-content: flex-end;
+  `}
+`;
+
+export const Divider = styled.div`
+  height: 8px;
+  width: 80px;
+  margin: 40px auto;
+  background: #8d60f5;
+
+  ${large` margin: 40px auto `}
+`;
+
+export const Headline = styled.h2`
+  text-align: center;
+  margin-bottom: 40px;
+`;
+
+export const Section = styled.section``;
+export const Project = styled.section`
+  background: ${props => (props.background ? props.background : "")};
+  color: ${props => (props.color ? props.color : "inherit")}
+  padding: 20px 0;
+
+  ${large` padding: 40px 0 `}
+
+  a:link, a:visited {
+    color: ${props => (props.color ? props.color : "inherit")}
   }
 `;
 
-export const Brand = styled.a`
-  display: block;
-  margin-bottom: 5px;
-  font-weight: 700;
-  text-decoration: none;
-`;
-
-export const BrandTag = styled.small`
-  display: none;
+export const Images = styled(Container)`
   margin-bottom: 20px;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.3);
-  ${large`
-    display: block;
-    `}
-`;
-
-export const NavLink = styled(Link)`
-  display: inline-block;
-  margin-right: 15px;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-
-  & span {
-    padding-bottom: 5px;
-  }
-
-  &:hover span {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
-  }
-
-  ${large`
-    display: block;
-    margin-bottom: 10px;
-    `}
-`;
-
-export const Social = styled.ul`
-  display: none;
-  list-style-type: none;
-  margin: 0;
   padding: 0;
 
   ${large`
-    display: block;
+    flex: 1 1 60%;
+    padding: 0;
   `}
 
-  & li {
-    display: inline-block;
-    margin-right: 15px;
-  }
-`;
-
-export const Section = styled.section`
-  position: relative;
-  margin: 0 auto;
-  padding: 20px 20px 0;
-  max-width: 1100px;
-
-  > h1 {
-    padding-bottom: 20px;
-    font-size: 2.5rem;
-    font-weight: bold;
-    border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
-  }
-
-  > h2 {
-    padding-bottom: 10px;
-    font-size: 1.4em;
-    border-bottom: 1px rgba(0, 0, 0 , 0.1) solid;
-  }
-
-  & ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style-type: none;
-
-  }
-
-  ${large`
-
-    padding: 40px 40px 0;
-
-    `}
-`;
-
-export const SpacesBackground = styled.div`
-  width: 580px;
-  padding: 40px;
-  text-align: center;
-  margin-bottom: 40px;
-  background-color: #443487;
-  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23221538' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
-`;
-
-export const KpopBackground = styled.div`
-  float: right;
-  width: 580px;
-  padding-top: 40px;
-  text-align: center;
-  margin-bottom: 40px;
-  background-color: #dbe5db;
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2392ac94' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-
   & img {
-    margin: 0 40px 40px;
-  }
-
-`;
-
-export const SpacesDescription = styled.div`
-  top: 110px;
-  left: 550px;
-  position: absolute;
-  background: #443487;
-  width: 450px;
-  z-index: 100;
-  padding: 40px;
-  color: #FFF;
-
-  & h1 {
-    font-size: 2.2em;
-  }
-
-  & Tag {
-    border-color: #FFF
+    max-width: 100%;
   }
 `;
 
-export const KpopDescription = styled.div`
-  top: 110px;
-  right: 550px;
-  position: absolute;
-  background: #dbe5db;
-  width: 450px;
-  z-index: 100;
-  padding: 40px;
-  color: #000;
+export const Description = styled.div`
+  ${large`
+    flex: 1 1 35%;
+    margin-left: 40px;
+    font-size: 16px;
+  `}
+`;
 
-  & h1 {
-    font-size: 2.2em;
+export const Meta = styled.h4`
+  opacity: 0.7;
+  text-transform: uppercase;
+`;
+
+export const Title = styled.h3`
+  ${large` flex: 1 1 auto; `}
+`;
+
+export const Details = styled.p`
+  ${large`
+    line-height: 1em;
+  `}
+`;
+
+export const Links = styled.div`
+  margin-top: 20px;
+  ${large`
+    flex: 1 1 20%;
+    margin-left: -10px;
+  `}
+
+  & a {
+    margin-right: 10px;
+    font-weight: bold;
+
+    ${large`
+      padding: 5px 10px;
+      border: 5px transparent solid;
+      border-radius: 10px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        border-color: #fff;
+      }
+ 
+    `}
   }
 
+  & .fa {
+    margin-right: 5px;
+  }
 `;
 
-export const Tags = styled.p`
-  font-size: 0.8em;
-`;
-
-export const Tag = styled.span`
-  padding: 5px 10px;
-  border-radius: 20px;
-  border-width: 1px;
-  border-style: solid;
-  margin: 0 5px 0 0;
+export const Footer = styled.footer`
+  padding: 80px 0;
+  background: #111;
+  color: #fff;
 `;
