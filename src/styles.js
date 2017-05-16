@@ -1,4 +1,4 @@
-import styled, { injectGlobal, css } from "styled-components";
+import styled, { injectGlobal, css } from 'styled-components';
 
 const large = (...args) => css`
   @media screen and (min-width: 990px) {
@@ -134,14 +134,14 @@ export const Headline = styled.h2`
 
 export const Section = styled.section``;
 export const ProjectContainer = styled.section`
-  background: ${props => (props.background ? props.background : "")};
-  color: ${props => (props.color ? props.color : "inherit")}
+  background: ${props => (props.background ? props.background : '')};
+  color: ${props => (props.color ? props.color : 'inherit')}
   padding: 20px 0;
 
   ${large` padding: 40px 0 `}
 
   a:link, a:visited {
-    color: ${props => (props.color ? props.color : "inherit")}
+    color: ${props => (props.color ? props.color : 'inherit')}
   }
 `;
 
@@ -154,7 +154,7 @@ export const Images = styled.div`
   `}
 
   & img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
 `;
@@ -163,6 +163,7 @@ export const Description = styled.div`
   ${large`
     flex: 1 1 35%;
     margin-left: 40px;
+    margin-top: 14px;
     font-size: 16px;
   `}
 `;

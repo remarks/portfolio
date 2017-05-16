@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   ProjectContainer,
   Container,
@@ -8,7 +8,7 @@ import {
   Title,
   Details,
   Links
-} from "../styles.js";
+} from '../styles.js';
 
 const Project = props => (
   <ProjectContainer background={props.background} color={props.color}>
@@ -17,16 +17,12 @@ const Project = props => (
         <img src={props.feature} alt={props.title} />
       </Images>
       <Description>
-        <Meta>{props.meta.map(x => x)}</Meta>
+        <Meta>{props.meta}</Meta>
         <Title>{props.title}</Title>
         <Details>{props.details}</Details>
         <Links>
-          <a href={props.links.url}>
-            <i className="fa fa-link" /> Demo
-          </a>
-          <a href={props.links.repo}>
-            <i className="fa fa-github" /> Repo
-          </a>
+          <a href={props.links.url}><i className="fa fa-link" /> Demo</a>
+          <a href={props.links.repo}><i className="fa fa-github" /> Repo</a>
         </Links>
       </Description>
     </Container>
