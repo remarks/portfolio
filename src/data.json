@@ -4,16 +4,16 @@
     "spiel": "I've been a part of the web from the blinkies of Geocities to PHP vulnerabilities to JavaScript fatigue. I studied business and marketing in school while keeping web development as a part-time hobby but want to finally turn it into a full-time career. This description is trash.",
     "links": {
       "github": "https://github.com/remarks",
-      "linkedin": "https://www.linkedin.com/in/mark-pinero-7430a5129/",
-      "email": "mailto:markspinero@gmail.com"
+      "linkedin": "https://www.linkedin.com/in/mark-pinero/",
+      "email": "hi@markpinero.com"
     }
   },
   "projects": [
     {
       "background": "linear-gradient(135deg, #f76c19 0%, #ead061 100%)",
       "color": "#FFF",
-      "feature": "images/navi.png",
-      "title": "Navi",
+      "feature": "images/Navi@2x.png",
+      "title": "Navi: The Life Calendar",
       "details": "Navi is a life calendar that maps out your life by months: every block is a month of your life, and every row is one year. By adding in significant events in your life, like graduating, getting a new job, getting married, it lets you view your life more objectively and without bias.",
       "meta": "react, redux, node, mongodb",
       "links": {
@@ -24,7 +24,7 @@
     {
       "background": "linear-gradient(135deg, #2D2771 0%, #CF6FAC 100%)",
       "color": "#fff",
-      "feature": "images/recap-1@2x.jpg",
+      "feature": "images/Recap@2x.png",
       "title": "K-Pop Recap",
       "details": "K-Pop Recap is a news aggregator from the top Korean entertainment websites. As an avid K-pop fan, I know Korean entertainment news is basically a giant fire hose. I made K-Pop Recap to let you whitelist your favorite artists and allow you to only read the news you care about.",
       "meta": "node, mongodb, redis",
@@ -36,7 +36,7 @@
     {
       "background": "linear-gradient(135deg, #2825A7 0%, #8481FF 100%)",
       "color": "#fff",
-      "feature": "images/spaces@2x.jpg",
+      "feature": "images/Spaces@2x.png",
       "title": "Spaces",
       "details": "Spaces is a geo-location app using the Foursquare API to find local cafes you can work at easily. It integrates with Leaflet.js for mapping functionality.",
       "meta": "html/css, jquery, third-party apis",
@@ -45,5 +45,13 @@
         "repo": "https://github.com/remarks/spaces"
       }
     }
-  ]
+  ],
+  "footer": {
+    "links": {
+      "github": "https://github.com/remarks",
+      "linkedin": "https://www.linkedin.com/in/mark-pinero/",
+      "email": "hi@markpinero.com",
+      "tel": "8189678880"
+    }
+  }
 }

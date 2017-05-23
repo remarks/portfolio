@@ -18,7 +18,7 @@ const Project = props => (
       </Images>
       <Description>
         <Meta>{props.meta}</Meta>
-        <Title>{props.title}</Title>
+        <Title><a href={props.links.url}>{props.title}</a></Title>
         <Details>{props.details}</Details>
         <Links>
           <a href={props.links.url}><i className="fa fa-link" /> Demo</a>

@@ -18,7 +18,7 @@ const Intro = props => (
           <a href={props.links.linkedin}><i className="fa fa-linkedin" /></a>
         </li>
         <li>
-          <a href={props.links.email}>
+          <a href={`mailto:` + props.links.email}>
             <i className="fa fa-envelope-open-o" />
           </a>
         </li>
