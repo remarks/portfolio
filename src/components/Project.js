@@ -20,10 +20,12 @@ const Project = props => (
         <Meta>{props.meta}</Meta>
         <Title><a href={props.links.url}>{props.title}</a></Title>
         <Details>{props.details}</Details>
-        <Links>
-          <a href={props.links.url}><i className="fa fa-link" /> Demo</a>
-          <a href={props.links.repo}><i className="fa fa-github" /> Repo</a>
-        </Links>
+        {props.links
+          ? <Links>
+              <a href={props.links.url}><i className="fa fa-link" /> Demo</a>
+              <a href={props.links.repo}><i className="fa fa-github" /> Repo</a>
+            </Links>
+          : ''}
       </Description>
     </Container>
   </ProjectContainer>

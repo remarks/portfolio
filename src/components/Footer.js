@@ -13,7 +13,7 @@ const Footer = props => (
         <li><a href={props.links.linkedin}>LinkedIn</a></li>
       </ul>
       <div>
-        © 2017 Mark Pinero
+        © 2017
       </div>
     </Container>
   </FooterContainer>

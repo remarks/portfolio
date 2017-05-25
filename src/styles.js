@@ -83,13 +83,15 @@ export const Container = styled.div`
   ${large`
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 40px 0;
   `}
 `;
 
 export const IntroContainer = styled.section`
+  padding: 20px 0;
+
   ${large`
     flex: 1 1 500px;
+    padding: 150px 0;
     font-size: 20px;
   `}
 `;
@@ -99,6 +101,7 @@ export const Contact = styled.div`
   flex: 1 1 auto;
   justify-content: center;
   font-size: 30px;
+  padding: 20px 0;
 
   & li {
     display: inline-block;
@@ -114,6 +117,7 @@ export const Contact = styled.div`
 
   ${large`
     flex: 1 1 200px;
+    padding: 150px 0;
     justify-content: flex-end;
   `}
 `;
@@ -135,7 +139,7 @@ export const Headline = styled.h2`
 export const Section = styled.section``;
 export const ProjectContainer = styled.section`
   background: ${props => (props.background ? props.background : '')};
-  color: ${props => (props.color ? props.color : 'inherit')}
+  color: ${props => (props.color ? props.color : 'inherit')};
   padding: 20px 0;
 
   ${large` padding: 40px 0 `}
@@ -166,7 +170,6 @@ export const Description = styled.div`
   ${large`
     flex: 1 1 35%;
     margin-left: 40px;
-    margin-top: 14px;
     font-size: 16px;
   `}
 `;
@@ -223,6 +226,7 @@ export const Links = styled.div`
 
 export const FooterContainer = styled.footer`
   padding: 60px 0;
+  background: #FFF;
 
   ${large`
     padding: 100px 0;
@@ -232,5 +236,3 @@ export const FooterContainer = styled.footer`
 
   }
 `;
-
-
