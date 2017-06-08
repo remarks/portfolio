@@ -1,11 +1,11 @@
 {
   "intro": {
-    "headline": "Hi. I'm Mark Pinero. I'm a full-stack developer from Los Angeles, CA.",
-    "spiel": "I've been a part of the web from the blinkies of Geocities to PHP vulnerabilities to JavaScript fatigue. I studied business and marketing in school, but I kept tinkering on the web. Once I realized what I was missing, I came back to my first love and soulmate.",
+    "headline": "I'm Mark Anthony Pinero. I'm a full-stack developer from Los Angeles. I've been a part of the open web back when Geocities was a thing and have been passionate about it ever since. I've worked with various online communities creating original, usable experiences and maintaining their back-end.",
     "links": {
       "github": "https://github.com/remarks",
       "linkedin": "https://www.linkedin.com/in/markpinero/",
-      "email": "hi@markpinero.com"
+      "resume": "/mark-pinero-resume.pdf",
+      "email": "mark@markpinero.com"
     }
   },
   "projects": [
@@ -15,11 +15,24 @@
       "feature": "images/Navi@2x.png",
       "title": "Navi: The Life Calendar",
       "details": "Navi is a life calendar that maps out your life by months: every block is a month of your life, and every row is one year. By adding in significant events in your life, like graduating, getting a new job, getting married, it lets you view your life more objectively and without bias.",
-      "meta": "react, redux, node, mongodb",
-      "links": {
-        "url": "http://navi.netlify.com",
-        "repo": "https://github.com/remarks/navi"
-      }
+      "meta": "react, redux, nodejs, mongodb",
+      "links": [
+        {
+          "title": "Demo",
+          "url": "https://navi.netlify.com",
+          "icon": "fa fa-link"
+        },
+        {
+          "title": "Case Study",
+          "url": "https://medium.com/@markpinero/navi-case-study-a4f614cf1a66",
+          "icon": "fa fa-newspaper-o"
+        },
+        {
+          "title": "Repo",
+          "url": "https://github.com/remarks/navi",
+          "icon": "fa fa-github"
+        }
+      ]
     },
     {
       "background": "linear-gradient(135deg, #2D2771 0%, #CF6FAC 100%)",
@@ -27,11 +40,19 @@
       "feature": "images/Recap@2x.png",
       "title": "K-Pop Recap",
       "details": "K-Pop Recap is a news aggregator from the top Korean entertainment websites. As an avid K-pop fan, I know Korean entertainment news is basically a giant fire hose. I made K-Pop Recap to let you whitelist your favorite artists and allow you to only read the news you care about.",
-      "meta": "node, mongodb, redis",
-      "links": {
-        "url": "http://www.kpoprecap.com",
-        "repo": "https://github.com/remarks/red"
-      }
+      "meta": "nodejs, mongodb, redis",
+      "links": [
+        {
+          "title": "Demo",
+          "url": "http://kpoprecap.com",
+          "icon": "fa fa-link"
+        },
+        {
+          "title": "Repo",
+          "url": "https://github.com/remarks/red",
+          "icon": "fa fa-github"
+        }
+      ]
     },
     {
       "background": "linear-gradient(135deg, #2825A7 0%, #8481FF 100%)",
@@ -40,17 +61,34 @@
       "title": "Spaces",
       "details": "Spaces is a geo-location app using the Foursquare API to find local cafes you can work at easily. It integrates with Leaflet.js for mapping functionality.",
       "meta": "html/css, jquery, third-party apis",
-      "links": {
-        "url": "https://remarks.github.io/spaces",
-        "repo": "https://github.com/remarks/spaces"
-      }
+      "links": [
+        {
+          "title": "Demo",
+          "url": "https://remarks.github.io/spaces",
+          "icon": "fa fa-link"
+        },
+        {
+          "title": "Repo",
+          "url": "https://github.com/remarks/spaces",
+          "icon": "fa fa-github"
+        }
+      ]
+    },
+    {
+      "background": "linear-gradient(135deg, #bdc3c7 0%, #2c3e50 100%)",
+      "color": "#FFFFFF",
+      "feature": "images/Teebots@2x.png",
+      "title": "Teebots",
+      "details": "Co-founded an apparel and merchandise brand from 2012-2014 which marketed towards niche Korean-pop communities. We produced over $50,000 in sales revenue on a part-time basis.",
+      "meta": "lemp stack, wordpress/woocommerce"
     }
   ],
   "footer": {
     "links": {
       "github": "https://github.com/remarks",
       "linkedin": "https://www.linkedin.com/in/markpinero/",
-      "email": "hi@markpinero.com",
+      "email": "mark@markpinero.com",
+      "resume": "/mark-pinero-resume.pdf",
       "tel": "8189678880"
     }
   }

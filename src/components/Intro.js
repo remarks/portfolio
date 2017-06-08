@@ -1,30 +1,29 @@
-import React from "react";
-import { Container, IntroContainer, Contact } from "../styles";
+import React from 'react';
+import { Container, IntroContainer, Contact } from '../styles';
 
-const Intro = props => (
+const Intro = props =>
   <Container>
     <IntroContainer>
-      <h1>{props.headline}</h1>
-      <p>{props.spiel}</p>
+      <h1><em>Hi.</em> {props.headline}</h1>
+      {/*<p>{props.spiel}</p>*/}
+      <Contact>
+        <ul>
+          <li>
+            <a href={props.links.github}>Github</a>
+          </li>
+          <li>
+            <a href={props.links.linkedin}>LinkedIn</a>
+          </li>
+          <li>
+            <a href={props.links.resume}>Resume</a>
+          </li>
+          <li>
+            <a href={`mailto:` + props.links.email}>Contact</a>
+          </li>
+        </ul>
+      </Contact>
+
     </IntroContainer>
-    <Contact>
-      <ul>
-        <li>
-          <a href={props.links.github}>
-            <i className="fa fa-github" />
-          </a>
-        </li>
-        <li>
-          <a href={props.links.linkedin}><i className="fa fa-linkedin" /></a>
-        </li>
-        <li>
-          <a href={`mailto:` + props.links.email}>
-            <i className="fa fa-envelope-open-o" />
-          </a>
-        </li>
-      </ul>
-    </Contact>
-  </Container>
-);
+  </Container>;
 
 export default Intro;

@@ -10,7 +10,6 @@ const large = (...args) => css`
 injectGlobal`
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
 body {
   margin: 0;
   color: rgba(0,0,0,0.7);
@@ -78,6 +77,7 @@ export const Container = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1200px;
+  width: 80%;
   margin: 0 auto;
   padding: 20px;
   ${large`
@@ -89,37 +89,60 @@ export const Container = styled.div`
 export const IntroContainer = styled.section`
   padding: 20px 0;
 
+  & h1 {
+    font-size: 1.4em;
+    line-height: 1.5;
+
+    ${large`
+      font-size: 1.9em;
+    `}
+  }
+
+  & em {
+    color: blue
+  }
+
   ${large`
     flex: 1 1 500px;
-    padding: 150px 0;
-    font-size: 20px;
+    padding: 120px 0;
   `}
 `;
 
 export const Contact = styled.div`
   display: flex;
   flex: 1 1 auto;
-  justify-content: center;
-  font-size: 30px;
-  padding: 20px 0;
+  justify-content: flex-start;
+  font-family: "Work Sans";
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 20px;
 
   & li {
-    display: inline-block;
+    display: block;
 
-    &:not(:first-of-type) {
-      margin: 0 0 0 30px;
+    ${large `
+      display: inline-block !important;
+
+      &:not(:first-of-type) {
+        margin: 0 0 0 20px !important;
+      }
+    `}
+
+    &:not(:last-of-type) {
+      margin: 0 0 20px 0;
     }
   }
 
   & a {
-    border-bottom: none;
-  }
+    border-bottom: 5px transparent solid;
+    padding-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+    color: blue;
 
-  ${large`
-    flex: 1 1 200px;
-    padding: 150px 0;
-    justify-content: flex-end;
-  `}
+    &:hover {
+      border-color: blue
+    }
+  }
 `;
 
 export const Divider = styled.div`
@@ -207,8 +230,8 @@ export const Links = styled.div`
     font-weight: bold;
 
     ${large`
-      margin-right: 10px;
-      padding: 5px 15px;
+      margin-right: 5px;
+      padding: 5px 10px;
       border: 5px transparent solid;
       border-radius: 10px;
       transition: all 0.3s ease-in-out;
