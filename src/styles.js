@@ -8,7 +8,7 @@ const large = (...args) => css`
 
 // eslint-disable-next-line
 injectGlobal`
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 body {
   margin: 0;
@@ -23,7 +23,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0.75rem;
-  font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   line-height: 1.3em;
 }
 
@@ -112,17 +112,17 @@ export const Contact = styled.div`
   display: flex;
   flex: 1 1 auto;
   justify-content: flex-start;
-  font-family: "Work Sans";
+  font-family: "Poppins";
   font-weight: bold;
   font-size: 20px;
   padding-top: 20px;
 
   & li {
-    display: block;
+    display: inline-block;
+    width: 50%;
 
     ${large `
-      display: inline-block !important;
-
+      width: auto !important;
       &:not(:first-of-type) {
         margin: 0 0 0 20px !important;
       }
@@ -135,7 +135,6 @@ export const Contact = styled.div`
 
   & a {
     border-bottom: 5px transparent solid;
-    padding-bottom: 5px;
     transition: all 0.3s ease-in-out;
     color: blue;
 
@@ -203,15 +202,6 @@ export const Meta = styled.h4`
 
 export const Title = styled.h3`
   ${large` flex: 1 1 auto; `}
-
-  & a {
-    border-bottom: 5px transparent solid;
-    transition: all 0.3s ease-in-out;
-
-    &:hover {
-      border-color: #FFF;
-    }
-  }
 `;
 
 export const Details = styled.p`

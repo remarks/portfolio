@@ -1,6 +1,5 @@
 import React from 'react';
 import { ProjectContainer, Container, Images, Description, Meta, Title, Details, Links } from '../styles.js';
-import PropTypes from 'prop-types';
 
 class Project extends React.Component {
   render() {
@@ -12,7 +11,7 @@ class Project extends React.Component {
           </Images>
           <Description>
             <Meta>{this.props.meta}</Meta>
-            <Title><a href={this.props.links.url}>{this.props.title}</a></Title>
+            <Title>{this.props.title}</Title>
             <Details>{this.props.details}</Details>
             <Links>
             {this.props.links ? this.props.links.map((link) => (
