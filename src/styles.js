@@ -121,7 +121,7 @@ export const Contact = styled.div`
     display: inline-block;
     width: 50%;
 
-    ${large `
+    ${large`
       width: auto !important;
       &:not(:first-of-type) {
         margin: 0 0 0 20px !important;
@@ -202,6 +202,15 @@ export const Meta = styled.h4`
 
 export const Title = styled.h3`
   ${large` flex: 1 1 auto; `}
+
+  & a:link {
+    border-bottom: 5px transparent solid;
+    transition: border 0.3s;
+  }
+
+  & a:hover {
+    border-bottom: 5px #fff solid;
+  }
 `;
 
 export const Details = styled.p`

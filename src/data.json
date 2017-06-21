@@ -44,7 +44,7 @@
       "links": [
         {
           "title": "Demo",
-          "url": "http://kpoprecap.com",
+          "url": "http://www.kpoprecap.com",
           "icon": "fa fa-link"
         },
         {
@@ -78,8 +78,8 @@
       "background": "linear-gradient(135deg, #bdc3c7 0%, #2c3e50 100%)",
       "color": "#FFFFFF",
       "feature": "images/Teebots@2x.png",
-      "title": "Teebots",
-      "details": "Co-founded an apparel and merchandise brand from 2012-2014 which marketed towards niche Korean-pop communities. We produced over $50,000 in sales revenue on a part-time basis.",
+      "title": "Teebots (Offline)",
+      "details": "Co-founded an apparel and merchandise brand from 2012-2014 which marketed towards niche Korean-pop communities. We produced over $50,000 in sales part-time.",
       "meta": "lemp stack, wordpress/woocommerce"
     }
   ],
