@@ -1,6 +1,6 @@
 {
   "intro": {
-    "headline": "I'm Mark Anthony Pinero. I'm a full-stack developer from Los Angeles. I've been a part of the open web back when Geocities was a thing and have been passionate about it ever since. I've worked with various online communities creating original, usable experiences and maintaining their back-end.",
+    "headline": "I'm Mark Anthony Pinero. I'm a full-stack developer from Los Angeles, California. I've been a part of the open web back when Geocities was a thing and have been passionate about it ever since. I've worked with various online communities creating original, usable experiences.",
     "links": {
       "github": "https://github.com/remarks",
       "linkedin": "https://www.linkedin.com/in/markpinero/",
@@ -78,18 +78,9 @@
       "background": "linear-gradient(135deg, #bdc3c7 0%, #2c3e50 100%)",
       "color": "#FFFFFF",
       "feature": "images/Teebots@2x.png",
-      "title": "Teebots (Offline)",
+      "title": "Teebots",
       "details": "Co-founded an apparel and merchandise brand from 2012-2014 which marketed towards niche Korean-pop communities. We produced over $50,000 in sales part-time.",
-      "meta": "lemp stack, wordpress/woocommerce"
+      "meta": "lamp + nginx, wordpress"
     }
-  ],
-  "footer": {
-    "links": {
-      "github": "https://github.com/remarks",
-      "linkedin": "https://www.linkedin.com/in/markpinero/",
-      "email": "mark@markpinero.com",
-      "resume": "/mark-pinero-resume.pdf",
-      "tel": "8189678880"
-    }
-  }
+  ]
 }
