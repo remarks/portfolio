@@ -19,10 +19,7 @@ const HeaderContainer = styled.header`
 
   & ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin: 0 auto;
-    width: 400px;
   }
 
   & li {

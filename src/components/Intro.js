@@ -61,12 +61,13 @@ const Contact = styled.div`
     padding: 20px 0 30px;
   `}
 
-  & a {
+  & a:link, a:visited {
     border-bottom: 5px transparent solid;
     transition: all 0.3s ease-in-out;
     color: blue;
 
     &:hover {
+      color: blue;
       border-color: blue
     }
   }

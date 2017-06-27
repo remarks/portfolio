@@ -8,8 +8,6 @@ export const large = (...args) => css`
 
 // eslint-disable-next-line
 injectGlobal`
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 body {
   margin: 0;
   color: rgba(0,0,0,0.7);

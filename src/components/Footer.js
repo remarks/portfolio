@@ -14,13 +14,14 @@ const FooterContainer = styled.footer`
   padding: 50px 0 70px;
   text-align: center;
 
-  & a {
+  & a:link, a:visited {
     color: blue;
     transition: all 0.3s ease-in-out;
     border-bottom: 5px transparent solid;
-  }
-  & a:hover {
-    border-bottom: 5px blue solid;
+
+    &:hover {
+      border-color: blue;
+    }
   }
 `;
 
