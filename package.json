@@ -3,12 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "emotion": "^3.0.2",
+    "preact": "^8.1.0",
+    "preact-compat": "^3.16.0",
     "prop-types": "^15.5.10",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-router": "^4.0.0",
-    "react-router-dom": "^4.0.0",
     "styled-components": "^2.0.0"
   },
   "devDependencies": {
