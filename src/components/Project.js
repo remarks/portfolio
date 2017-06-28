@@ -7,7 +7,11 @@ class Project extends React.Component {
     let appLink;
     if (this.props.links[0]) {
       // ...props function for title
-      appLink = <a href={this.props.links[0].url}>{this.props.title}</a>;
+      appLink = (
+        <a href={this.props.links[0].url}>
+          {this.props.title}
+        </a>
+      );
     } else {
       appLink = this.props.title;
     }
@@ -18,13 +22,21 @@ class Project extends React.Component {
           <img src={this.props.feature} alt={this.props.title} />
         </Images>
         <Description>
-          <Title>{appLink}</Title>
-          <Details>{this.props.details}</Details>
-          <Meta>{this.props.meta}</Meta>
+          <Title>
+            {appLink}
+          </Title>
+          <Details>
+            {this.props.details}
+          </Details>
+          <Meta>
+            {this.props.meta}
+          </Meta>
           <Links>
             {this.props.links
               ? this.props.links.map(link =>
-                  <a href={link.url} key={link.url}><i className={link.icon} /> {link.title}</a>
+                  <a href={link.url} key={link.url}>
+                    <i className={link.icon} /> {link.title}
+                  </a>
                 )
               : null}
           </Links>
@@ -46,10 +58,8 @@ const ProjectContainer = styled.section`
   ${large`
     border-radius: 10px;
     padding: 40px;
-  `}
-
-  a:link, a:visited {
-    color: ${props => (props.color ? props.color : 'inherit')}
+  `} a:link, a:visited {
+    color: ${props => (props.color ? props.color : 'inherit')};
   }
 `;
 
@@ -58,31 +68,22 @@ const Images = styled.div`
 
   ${large`
     margin-bottom: 10px;
-  `}
-
-  & img {
+  `} & img {
     width: 100%;
     height: auto;
-    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
     border-radius: 7px;
-
   }
 `;
 
 const Description = styled.div`
   ${large`
     font-size: 16px;
-  `}
-`;
-
-const Meta = styled.h4`
-  text-transform: lowercase;
+  `};
 `;
 
 const Title = styled.h3`
-  ${large` flex: 1 1 auto; `}
-
-  & a:link {
+  ${large` flex: 1 1 auto; `} & a:link {
     border-bottom: 5px transparent solid;
     transition: border 0.3s;
   }
@@ -93,16 +94,21 @@ const Title = styled.h3`
 `;
 
 const Details = styled.p`
+  margin: 15px 0 10px;
   line-height: 26px;
 `;
 
+const Meta = styled.small`
+  color: rgba(255, 255, 255, 0.8);
+  border-left: 2px rgba(255, 255, 255, 0.8) dashed;
+  padding-left: 10px;
+`;
+
 const Links = styled.div`
-  margin-top: 20px;
+  margin-top: 10px;
   ${large`
     flex: 1 1 20%;
-  `}
-
-  & a {
+  `} & a {
     margin-right: 25px;
     font-weight: bold;
 
@@ -114,7 +120,7 @@ const Links = styled.div`
       &:hover {
         border-color: #fff;  
       }
-    `}
+    `};
   }
 
   & .fa {

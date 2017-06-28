@@ -4,7 +4,6 @@ import Project from './Project';
 import data from '../data.json';
 import styled from 'styled-components';
 import { large } from '../styles';
-// import Header from './Header';
 import Footer from './Footer';
 
 class App extends Component {
@@ -31,7 +30,7 @@ const ProjectGrid = styled.section`
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     margin: 0 auto 50px;
-  `}
+  `};
 `;
 
 export default App;

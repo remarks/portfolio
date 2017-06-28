@@ -5,7 +5,9 @@ import { Container, large } from '../styles';
 const Intro = props =>
   <Container>
     <IntroContainer>
-      <h1><em>Hi.</em> {props.headline}</h1>
+      <h1>
+        <em>Hi.</em> {props.headline}
+      </h1>
       <Contact>
         <ul>
           <li>
@@ -18,11 +20,10 @@ const Intro = props =>
             <a href={props.links.resume}>Resume</a>
           </li>
           <li>
-            <a href={`mailto:` + props.links.email}>Contact</a>
+            <a href={`mailto:` + props.links.email}>E-Mail</a>
           </li>
         </ul>
       </Contact>
-
     </IntroContainer>
   </Container>;
 
@@ -35,17 +36,17 @@ const IntroContainer = styled.section`
 
     ${large`
       font-size: 1.9em;
-    `}
+    `};
   }
 
   & em {
-    color: blue
+    color: blue;
   }
 
   ${large`
     flex: 1 1 500px;
     padding: 50px 0 0;
-  `}
+  `};
 `;
 
 const Contact = styled.div`
@@ -59,16 +60,14 @@ const Contact = styled.div`
 
   ${large`
     padding: 20px 0 30px;
-  `}
-
-  & a:link, a:visited {
+  `} & a:link, a:visited {
     border-bottom: 5px transparent solid;
     transition: all 0.3s ease-in-out;
     color: blue;
 
     &:hover {
       color: blue;
-      border-color: blue
+      border-color: blue;
     }
   }
 
@@ -88,7 +87,7 @@ const Contact = styled.div`
       &:not(:last-of-type) {
         margin-bottom: 0 !important;
       }
-    `}
+    `};
   }
 `;
 

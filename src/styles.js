@@ -37,11 +37,6 @@ h3 {
   font-size: 1.5em;
 }
 
-h4 {
-  font-size: 0.8em;
-  font-weight: normal;
-}
-
 a:link, a:visited {
   color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
@@ -75,7 +70,7 @@ export const Container = styled.div`
   ${large`
     flex-direction: row;
     flex-wrap: nowrap;
-  `}
+  `};
 `;
 
 export const Headline = styled.h2`
