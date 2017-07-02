@@ -148,7 +148,7 @@ module.exports = {
       // Process JS with Babel.
       {
         test: /\.(js|jsx)$/,
-        include: paths.appSrc,
+        include: [paths.appSrc, path.resolve('node_modules/preact_compat/src')],
         loader: require.resolve('babel-loader')
       },
       // The notation here is somewhat confusing.

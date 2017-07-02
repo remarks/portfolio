@@ -35,7 +35,7 @@ const IntroContainer = styled.section`
     line-height: 1.5;
 
     ${large`
-      font-size: 1.9em;
+      font-size: 1.9em !important;
     `};
   }
 

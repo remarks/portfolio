@@ -5,9 +5,8 @@ import { Container } from '../styles';
 const Footer = () =>
   <Container>
     <FooterContainer>
-      <h2>
-        I'm available for new projects. <a href="mailto:mark@markpinero.com">E-mail me</a>.
-      </h2>
+      <h2>I'm available for full-time or freelance.</h2>
+      <h2><a href="mailto:mark@markpinero.com">mark@markpinero.com</a></h2>
     </FooterContainer>
   </Container>;
 
