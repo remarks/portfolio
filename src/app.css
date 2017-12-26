@@ -11,7 +11,47 @@
  *
  * See: https://github.com/tailwindcss/tailwindcss/issues/53#issuecomment-341413622
  */
-@tailwind preflight;
+ @tailwind preflight;
+ 
+ body {
+   @apply font-sans text-xl;
+}
+
+#root {
+  @apply border-t-20 border-indigo-darker;
+}
+
+a {
+  @apply text-indigo;
+}
+  a:hover {
+  @apply text-indigo-darker;
+}
+
+.border-t-20 {
+  border-top-width: 20px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.debug * {
+  border: 1px red dotted;
+}
+
+#email-me {
+  transition: box-shadow 0.3s ease-in, background 0.3s ease-in;
+}
+
+.no-select {
+  user-select: none;
+}
+
+.button {
+  @apply .rounded-full .bg-indigo-darker .text-white .shadow .no-select .px-4 .py-2 .inline-block .no-underline;
+}
+
 
 /**
  * Here you would add any of your custom component classes; stuff that you'd

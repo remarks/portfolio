@@ -6,12 +6,16 @@
   "scripts": {
     "start": "react-static start",
     "build": "react-static build",
-    "serve": "serve dist -p 3000"
+    "serve": "serve dist -p 3000",
+    "presurge": "yarn build",
+    "surge": "surge ./dist markpinero.com"
   },
   "dependencies": {
     "axios": "^0.16.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-feather": "^1.0.8",
+    "react-helmet": "^5.2.0",
     "react-router": "^4.2.0",
     "react-static": "^4.8.3",
     "tailwindcss": "^0.3.0"
