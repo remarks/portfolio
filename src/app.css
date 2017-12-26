@@ -13,23 +13,25 @@
  */
  @tailwind preflight;
  
+html {
+  @apply .border-l-20 .border-indigo;
+  min-height: 100vh;
+}
+
  body {
    @apply font-sans text-xl;
 }
 
-#root {
-  @apply border-t-20 border-indigo-darker;
-}
-
 a {
   @apply text-indigo;
+  transition: color 0.3s ease-in;
 }
   a:hover {
   @apply text-indigo-darker;
 }
 
-.border-t-20 {
-  border-top-width: 20px;
+.border-l-20 {
+  border-left-width: 20px;
 }
 
 .mt-80 {
@@ -44,12 +46,12 @@ a {
   transition: box-shadow 0.3s ease-in, background 0.3s ease-in;
 }
 
-.no-select {
-  user-select: none;
+.button {
+  @apply .rounded-full .bg-indigo .text-white .shadow .px-4 .py-2 .inline-block .no-underline;
 }
 
-.button {
-  @apply .rounded-full .bg-indigo-darker .text-white .shadow .no-select .px-4 .py-2 .inline-block .no-underline;
+.poppins {
+  font-family: 'Poppins';
 }
 
 
