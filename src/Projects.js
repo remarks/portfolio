@@ -5,13 +5,13 @@ import data from './data.json'
 class Projects extends React.Component {
   render() {
     const projects = data.map(project => {
-      const projectImageStyle = `border-${project.style} max-w-md w-full border-8 border-solid block`
+      const projectImageStyle = `border-${project.style} w-full border-8 border-solid block`
       const linkStyle = `no-underline border-b text-${project.style} transition`
       return (
         <div className="my-8">
-          <Link to={project.url}><img src={project.image} className={projectImageStyle} /></Link>
+          <Link to={project.url} rel="nofollow"><img src={project.image} className={projectImageStyle} /></Link>
           <h2 className="font-poppins mt-4 md:mt-8 text-xl leading-normal">
-            <Link to={project.url} className={linkStyle}>{project.title}</Link>
+            <Link to={project.url} rel="nofollow" className={linkStyle}>{project.title}</Link>
           </h2>
           <p className="text-lg leading-normal mt-4">{project.desc}</p>
         </div>
