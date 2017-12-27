@@ -10,7 +10,7 @@ class Projects extends React.Component {
       return (
         <div className="my-8">
           <img src={project.image} className={projectImageStyle} />
-          <h2 className="mt-4 md:mt-8 text-xl leading-normal">
+          <h2 className="font-poppins mt-4 md:mt-8 text-xl leading-normal">
             <Link to={project.url} className={linkStyle}>{project.title}</Link>
           </h2>
           <p className="text-lg leading-normal mt-4">{project.desc}</p>
@@ -18,8 +18,8 @@ class Projects extends React.Component {
       )
     })
     return (
-      <div className="projects">
-        <h1>Portfolio</h1>
+      <div className="projects mt-80">
+        <h1 className="font-poppins text-3xl lg:text-4xl lg:w-3/4">Portfolio</h1>
         <div className="grid">{projects}</div>
       </div>
     )

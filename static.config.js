@@ -1,5 +1,5 @@
 import path from 'path'
-
+import React, { Component } from 'react'
 import autoprefixer from 'autoprefixer'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import postcssFlexbugsFixes from 'postcss-flexbugs-fixes'
@@ -7,6 +7,24 @@ import tailwindcss from 'tailwindcss'
 import marked from 'marked'
 
 export default {
+  Document: class CustomHtml extends Component {
+    render () {
+      const { Html, Head, Body, children, renderMeta } = this.props
+
+      return (
+        <Html className="border-t-20 border-indigo md:border-l-20 md:border-t-0">
+          <Head>
+            <title>Mark Pinero</title>
+            <meta charSet="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <link href="https://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet" />
+            {renderMeta.styleTags}
+          </Head>
+          <Body className="font-sans text-xl mx-8 md:mx-16">{children}</Body>
+        </Html>
+      )
+    }
+  },
   webpack: (config, { stage, defaultLoaders }) => {
     let cssLoader = {}
 

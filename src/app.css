@@ -14,12 +14,7 @@
 @tailwind preflight;
 
 html {
-  @apply .border-t-20 .border-indigo;
   min-height: 100vh;
-}
-
-body {
-  @apply .font-sans .text-xl .mx-8;
 }
 
 a {
@@ -35,7 +30,7 @@ a:hover {
   border-top-width: 20px;
 }
 
-.border-l-20 {
+.md\:border-l-20 {
   border-left-width: 20px;
 }
 
@@ -43,98 +38,16 @@ a:hover {
   margin-top: 80px;
 }
 
-.poppins {
+.font-poppins {
   font-family: 'Poppins';
 }
 
-.site-wrapper {
-  @apply .w-full .max-w-2xl;
-}
-
-.hero {
-  @apply max-w-sm;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @apply .poppins;
-}
-
-.hero,
-.projects {
-  @apply .mt-80;
-}
-
-h1 {
-  @apply .text-3xl;
-}
-
-p {
-  @apply .mt-8 .leading-tight;
-}
-
-p a {
-  @apply .font-bold .no-underline .border-b .pb-px;
-}
-
-ul {
-  @apply .text-base .leading-normal .px-4 .mt-8;
-}
-
-li {
-  @apply .mr-4;
-}
-
-li a {
-  @apply .no-underline .border-b .pb-px;
-}
-
-@screens md {
-  html {
-    @apply .border-0 .border-l-20;
-  }
-
-  .site-wrapper {
-    @apply .w-4/5;
-  }
-
-  body {
-    @apply .mx-16;
-  }
-
-  ul {
-    @apply .text-lg p-0;
-  }
-
-  li {
-    @apply .mr-6;
-  }
-
-}
-
 @media (min-width: 768px) {
-  html {
-    @apply .border-l-20 border-t-0;
-  }
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
-}
-
-@screens lg {
-  h1 {
-    @apply .text-4xl w-3/4;
-  }
-  p {
-    @apply .text-2xl .w-3/4;
-  }
-
 }
 
 /**
