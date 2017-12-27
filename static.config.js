@@ -7,6 +7,7 @@ import tailwindcss from 'tailwindcss'
 import marked from 'marked'
 
 export default {
+  siteRoot: 'https://markpinero.com',
   preact: true,
   Document: class CustomHtml extends Component {
     render () {
