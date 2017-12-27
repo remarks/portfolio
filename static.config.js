@@ -7,6 +7,7 @@ import tailwindcss from 'tailwindcss'
 import marked from 'marked'
 
 export default {
+  preact: true,
   Document: class CustomHtml extends Component {
     render () {
       const { Html, Head, Body, children, renderMeta } = this.props

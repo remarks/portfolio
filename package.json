@@ -8,7 +8,7 @@
     "build": "react-static build",
     "serve": "serve dist -p 3000",
     "presurge": "yarn build",
-    "surge": "surge ./dist markpinero.com"
+    "surge": "surge ./dist https://markpinero.com"
   },
   "dependencies": {
     "axios": "^0.16.2",
