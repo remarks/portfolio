@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Mesosphere DC/OS Docs",
+    "image": "/projects/mesosphere.jpeg",
+    "style": "purple",
+    "url": "https://docs.mesosphere.com",
+    "desc": "Led responsive design implementation and developed customized search indexing."
+  },
+  {
+    "title": "Interactive Torch for Olympic Channel",
+    "image": "/projects/olympics.jpeg",
+    "style": "orange",
+    "url": "https://interactive.olympicchannel.com/3d-torch",
+    "desc": "Led responsive design implementation and animations."
+  },
+  {
+    "title": "Smartcar",
+    "image": "/projects/smartcar.jpeg",
+    "style": "red-darker",
+    "url": "https://smartcar.com",
+    "desc": "Led development and implementation for the client's new homepage."
+  }
+]

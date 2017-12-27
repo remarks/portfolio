@@ -4,6 +4,7 @@ import autoprefixer from 'autoprefixer'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import postcssFlexbugsFixes from 'postcss-flexbugs-fixes'
 import tailwindcss from 'tailwindcss'
+import marked from 'marked'
 
 export default {
   webpack: (config, { stage, defaultLoaders }) => {

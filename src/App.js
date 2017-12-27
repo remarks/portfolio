@@ -1,29 +1,28 @@
 import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
+import Projects from './Projects'
+
 import './app.css'
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="site-wrapper">
         <Helmet>
-          <meta charSet="utf-8" />
           <title>Mark Pinero</title>
+          <meta charSet="utf-8" />
           <link href="https://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet" />
         </Helmet>
-        <div className="w-4/5 ml-8 mr-4 md:mx-16 md:w-3/4 max-w-lg">
-          <h1 className="text-3xl mt-80 lg:text-4xl poppins">Hi, I'm Mark Pinero.</h1>
-          <p className="my-8 leading-tight lg:text-2xl lg:w-3/4">I'm a full-stack developer from LA. I'm currently working for a design agency called <a href="https://ettrics.com" rel="nofollow" className="font-bold no-underline border-b pb-x">Ettrics</a>. I specialize in front-end development with a focus on user experience and usability.</p>
-          <ul className="text-base md:text-lg leading-normal p-0">
-            <li className="mr-4 md:mr-6">
-              <a href="https://linkedin.com/in/markpinero" className="no-underline border-b pb-x">Linkedin</a>
-            </li>
-            <li className="mr-4 md:mr-6">
-              <a href="https://github.com/remarks" className="no-underline border-b pb-x">Github</a>
-            </li>
-            <li><a href="mailto:mark@markpinero.com" id="email-me" class="no-underline border-b pb-x">E-mail</a></li>
+        <div className="hero">
+          <h1>Hi, I'm Mark Pinero.</h1>
+          <p>I'm a full-stack developer from LA, currently working for  <a href="https://ettrics.com" rel="nofollow">Ettrics</a>. I specialize in front-end development with a keen eye for user experience and usability.</p>
+          <ul>
+            <li><a href="https://linkedin.com/in/markpinero">Linkedin</a></li>
+            <li><a href="https://github.com/remarks">Github</a></li>
+            <li><a href="mailto:mark@markpinero.com">E-mail</a></li>
           </ul>
         </div>
+        <Projects />
       </div>
     )
   }

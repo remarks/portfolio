@@ -11,23 +11,28 @@
  *
  * See: https://github.com/tailwindcss/tailwindcss/issues/53#issuecomment-341413622
  */
- @tailwind preflight;
- 
+@tailwind preflight;
+
 html {
-  @apply .border-l-20 .border-indigo;
+  @apply .border-t-20 .border-indigo;
   min-height: 100vh;
 }
 
- body {
-   @apply font-sans text-xl;
+body {
+  @apply .font-sans .text-xl .mx-8;
 }
 
 a {
-  @apply text-indigo;
+  @apply .text-indigo;
   transition: color 0.3s ease-in;
 }
-  a:hover {
-  @apply text-indigo-darker;
+
+a:hover {
+  @apply .text-indigo-darker;
+}
+
+.border-t-20 {
+  border-top-width: 20px;
 }
 
 .border-l-20 {
@@ -38,22 +43,99 @@ a {
   margin-top: 80px;
 }
 
-.debug * {
-  border: 1px red dotted;
-}
-
-#email-me {
-  transition: box-shadow 0.3s ease-in, background 0.3s ease-in;
-}
-
-.button {
-  @apply .rounded-full .bg-indigo .text-white .shadow .px-4 .py-2 .inline-block .no-underline;
-}
-
 .poppins {
   font-family: 'Poppins';
 }
 
+.site-wrapper {
+  @apply .w-full .max-w-2xl;
+}
+
+.hero {
+  @apply max-w-sm;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply .poppins;
+}
+
+.hero,
+.projects {
+  @apply .mt-80;
+}
+
+h1 {
+  @apply .text-3xl;
+}
+
+p {
+  @apply .mt-8 .leading-tight;
+}
+
+p a {
+  @apply .font-bold .no-underline .border-b .pb-px;
+}
+
+ul {
+  @apply .text-base .leading-normal .px-4 .mt-8;
+}
+
+li {
+  @apply .mr-4;
+}
+
+li a {
+  @apply .no-underline .border-b .pb-px;
+}
+
+@screens md {
+  html {
+    @apply .border-0 .border-l-20;
+  }
+
+  .site-wrapper {
+    @apply .w-4/5;
+  }
+
+  body {
+    @apply .mx-16;
+  }
+
+  ul {
+    @apply .text-lg p-0;
+  }
+
+  li {
+    @apply .mr-6;
+  }
+
+}
+
+@media (min-width: 768px) {
+  html {
+    @apply .border-l-20 border-t-0;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+@screens lg {
+  h1 {
+    @apply .text-4xl w-3/4;
+  }
+  p {
+    @apply .text-2xl .w-3/4;
+  }
+
+}
 
 /**
  * Here you would add any of your custom component classes; stuff that you'd

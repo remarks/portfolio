@@ -12,6 +12,9 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
+    "markdown": "^0.5.0",
+    "markdown-loader": "^2.0.1",
+    "marked": "^0.3.9",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-feather": "^1.0.8",

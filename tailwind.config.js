@@ -323,7 +323,11 @@ module.exports = {
   textColors: _.pick(colors, [
     'indigo',
     'indigo-darker',
-    'white'
+    'white',
+    'black',
+    'purple',
+    'orange',
+    'red-darker'
   ]),
 
 
@@ -358,6 +362,10 @@ module.exports = {
 
   borderWidths: {
     default: '1px',
+    0: '0',
+    2: '2px',
+    4: '4px',
+    8: '8px'
   },
 
 
@@ -378,7 +386,7 @@ module.exports = {
   |
   */
 
-  borderColors: Object.assign({ default: colors['grey-light'] }, _.pick(colors,['indigo','grey-light'])),
+  borderColors: Object.assign({ default: colors['grey-light'] }, _.pick(colors,['indigo','orange','purple', 'red-darker', 'grey-light'])),
 
 
   /*
@@ -500,7 +508,11 @@ module.exports = {
   */
 
   maxWidth: {
+    sm: '30rem',
+    md: '40rem',
     lg: '50rem',
+    xl: '60rem',
+    '2xl': '70rem'
   },
 
 
