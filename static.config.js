@@ -22,7 +22,10 @@ export default {
             <link href="https://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet" />
             {renderMeta.styleTags}
           </Head>
-          <Body className="font-sans text-xl mx-8 md:mx-16">{children}</Body>
+          <Body className="font-sans text-xl mx-8 md:mx-16">
+            {children}
+            <script src="//load.sumome.com/" data-sumo-site-id="bfc325c4f716f1bb64356b00d0c06b5c4e1105186abcd3685a423887f1b996a0" async="async"></script>
+          </Body>
         </Html>
       )
     }
