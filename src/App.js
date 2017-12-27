@@ -6,7 +6,7 @@ import './app.css'
 class App extends Component {
   render() {
     return (
-      <div className="w-full max-w-2xl md:w-4/5">
+      <div className="w-full max-w-2xl">
         <div className="hero max-w-sm mt-80">
           <h1 className="font-poppins">Hi, I'm Mark Pinero.</h1>
           <p className="mt-8 leading-tight lg:text-2xl">I'm a full-stack developer from LA, currently working for  <a href="https://ettrics.com" rel="nofollow" className="font-bold no-underline border-b pb-px">Ettrics</a>. I specialize in front-end development with a keen eye for user experience and usability.</p>

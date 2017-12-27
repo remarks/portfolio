@@ -26,18 +26,6 @@ a:hover {
   @apply .text-indigo-darker;
 }
 
-.border-t-20 {
-  border-top-width: 20px;
-}
-
-.md\:border-l-20 {
-  border-left-width: 20px;
-}
-
-.mt-80 {
-  margin-top: 80px;
-}
-
 .font-poppins {
   font-family: 'Poppins';
 }
@@ -51,8 +39,8 @@ a:hover {
 }
 
 /**
- * Here you would add any of your custom component classes; stuff that you'd
- * want loaded *before* the utilities so that the utilities could still
+* Here you would add any of your custom component classes; stuff that you'd
+* want loaded *before* the utilities so that the utilities could still
  * override them.
  *
  * Example:

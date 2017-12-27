@@ -19,5 +19,19 @@
     "style": "red-darker",
     "url": "https://smartcar.com",
     "desc": "Led development and implementation for the client's new homepage."
+  },
+  {
+    "title": "Navi",
+    "image": "/projects/navi.jpeg",
+    "style": "blue",
+    "url": "https://navi.netlify.com",
+    "desc": "Led product design and development of full-stack webapp."
+  },
+  {
+    "title": "Kpop Recap",
+    "image": "/projects/kpoprecap.jpeg",
+    "style": "red",
+    "url": "https://kpoprecap.com",
+    "desc": "Led product design and development of full-stack webapp."
   }
 ]
