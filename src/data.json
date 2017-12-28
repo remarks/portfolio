@@ -4,34 +4,67 @@
     "image": "/projects/mesosphere.jpeg",
     "style": "purple",
     "url": "https://docs.mesosphere.com",
-    "desc": "Led responsive design implementation and developed customized search indexing."
+    "desc": "Led responsive design implementation and developed custom features such as search indexing.",
+    "stack": [
+      "HTML",
+      "CSS/SCSS",
+      "Vanilla JavaScript/ES6",
+      "NodeJS",
+      "Algolia"
+    ]
   },
   {
     "title": "Interactive Torch for Olympic Channel",
     "image": "/projects/olympics.jpeg",
     "style": "orange",
     "url": "https://interactive.olympicchannel.com/torch",
-    "desc": "Led responsive design implementation and animation."
+    "desc": "Led responsive design implementation and animations.",
+    "stack": [
+      "HTML",
+      "CSS/SCSS",
+      "Vanilla JavaScript/ES6",
+      "NodeJS"
+    ]
   },
   {
     "title": "Smartcar",
     "image": "/projects/smartcar.jpeg",
     "style": "red-darker",
     "url": "https://smartcar.com",
-    "desc": "Led development and implementation for the client's new homepage."
+    "desc": "Led development and implementation for the client's new homepage.",
+    "stack": [
+      "HTML",
+      "CSS/SCSS",
+      "Vanilla JavaScript/ES6",
+      "NodeJS"
+    ]
   },
   {
     "title": "Navi",
     "image": "/projects/navi.jpeg",
     "style": "blue",
     "url": "https://navi.netlify.com",
-    "desc": "Led product design and development of full-stack webapp."
+    "desc": "Led product design and development of full-stack webapp.",
+    "stack": [
+      "HTML",
+      "CSS/SCSS",
+      "React",
+      "Redux",
+      "NodeJS"
+    ]
   },
   {
     "title": "Kpop Recap",
     "image": "/projects/kpoprecap.jpeg",
     "style": "red",
     "url": "https://kpoprecap.com",
-    "desc": "Led product design and development of full-stack webapp."
+    "desc": "Led product design and development of full-stack webapp.",
+    "stack": [
+      "HTML",
+      "CSS/SCSS",
+      "React",
+      "Redux",
+      "NodeJS"
+    ]
   }
 ]
