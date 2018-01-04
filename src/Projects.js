@@ -16,7 +16,7 @@ class Projects extends React.Component {
             <Link to={project.url} rel="nofollow" className={linkStyle}>{project.title}</Link>
           </h2>
           <p className="text-lg leading-normal mt-4">{project.desc}</p>
-          <p className="list-reset text-base leading-normal mt-4">
+          <p className="list-reset text-lg leading-normal mt-4">
             <strong>Stack: </strong>
             {project.stack.map(item => renderStack(item))}
           </p>
