@@ -8,7 +8,7 @@
     "desc": "Led responsive design implementation and developed custom features such as search indexing.",
     "stack": [
       "HTML",
-      "CSS/SCSS",
+      "CSS/SASS",
       "Vanilla JavaScript/ES6",
       "NodeJS",
       "Algolia"
@@ -16,15 +16,29 @@
   },
   {
     "type": "work",
-    "title": "Interactive Torch for Olympic Channel",
-    "image": "/projects/olympics.jpeg",
+    "title": "Olympic Channel: Interactive Torch",
+    "image": "/projects/torch.jpeg",
     "style": "orange",
     "url": "https://interactive.olympicchannel.com/torch",
     "desc": "Led responsive design implementation and animations.",
     "stack": [
       "HTML",
-      "CSS/SCSS",
+      "CSS/SASS",
       "Vanilla JavaScript/ES6",
+      "NodeJS"
+    ]
+  },
+  {
+    "type": "work",
+    "title": "Olympic Channel: Become the Light",
+    "image": "/projects/btl.jpeg",
+    "style": "grey-darkest",
+    "url": "https://www.olympicchannel.com/light",
+    "desc": "Led development and implementation of the client's landing page.",
+    "stack": [
+      "HTML",
+      "CSS/SASS",
+      "jQuery",
       "NodeJS"
     ]
   },
@@ -37,7 +51,7 @@
     "desc": "Led development and implementation for the client's new homepage.",
     "stack": [
       "HTML",
-      "CSS/SCSS",
+      "CSS/SASS",
       "Vanilla JavaScript/ES6",
       "NodeJS"
     ]
@@ -51,7 +65,7 @@
     "desc": "Led product design and development of full-stack webapp.",
     "stack": [
       "HTML",
-      "CSS/SCSS",
+      "CSS/SASS",
       "React",
       "Redux",
       "NodeJS",
@@ -67,7 +81,7 @@
     "desc": "Led product design and development of full-stack webapp.",
     "stack": [
       "HTML",
-      "CSS/SCSS",
+      "CSS/SASS",
       "React",
       "Redux",
       "NodeJS",
