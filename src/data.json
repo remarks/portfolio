@@ -1,6 +1,20 @@
 [
   {
     "type": "work",
+    "title": "Smartcar",
+    "image": "/projects/smartcar.jpeg",
+    "style": "red-darker",
+    "url": "https://smartcar.com",
+    "desc": "Led development and implementation for the client's new homepage.",
+    "stack": [
+      "HTML",
+      "CSS/SASS",
+      "Vanilla JavaScript/ES6",
+      "NodeJS"
+    ]
+  },
+  {
+    "type": "work",
     "title": "Mesosphere DC/OS Docs",
     "image": "/projects/mesosphere.jpeg",
     "style": "purple",
@@ -34,7 +48,7 @@
     "image": "/projects/btl.jpeg",
     "style": "grey-darkest",
     "url": "https://www.olympicchannel.com/light",
-    "desc": "Led development and implementation of the client's landing page.",
+    "desc": "Led development and implementation of the client's landing site.",
     "stack": [
       "HTML",
       "CSS/SASS",
@@ -43,17 +57,14 @@
     ]
   },
   {
-    "type": "work",
-    "title": "Smartcar",
-    "image": "/projects/smartcar.jpeg",
-    "style": "red-darker",
-    "url": "https://smartcar.com",
-    "desc": "Led development and implementation for the client's new homepage.",
+    "type": "inactive",
+    "title": "Doyle Salewski",
+    "image": "/projects/ds.jpeg",
+    "style": "blue",
+    "url": "https://doylesalewski.ca",
+    "desc": "",
     "stack": [
-      "HTML",
-      "CSS/SASS",
-      "Vanilla JavaScript/ES6",
-      "NodeJS"
+      "HTML"
     ]
   },
   {
