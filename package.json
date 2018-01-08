@@ -3,13 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "engines": { "node": ">=9.3.0" },
+  "engines": { "node": "8.9.4" },
   "scripts": {
     "start": "react-static start",
     "build": "react-static build",
-    "serve": "serve dist -p 3000",
-    "presurge": "yarn build",
-    "surge": "surge ./dist markpinero.com"
+    "serve": "serve dist -p 3000"
   },
   "dependencies": {
     "axios": "^0.16.2",
