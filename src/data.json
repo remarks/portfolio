@@ -1,5 +1,6 @@
 [
   {
+    "type": "work",
     "title": "Mesosphere DC/OS Docs",
     "image": "/projects/mesosphere.jpeg",
     "style": "purple",
@@ -14,6 +15,7 @@
     ]
   },
   {
+    "type": "work",
     "title": "Interactive Torch for Olympic Channel",
     "image": "/projects/olympics.jpeg",
     "style": "orange",
@@ -27,6 +29,7 @@
     ]
   },
   {
+    "type": "work",
     "title": "Smartcar",
     "image": "/projects/smartcar.jpeg",
     "style": "red-darker",
@@ -40,6 +43,7 @@
     ]
   },
   {
+    "type": "personal",
     "title": "Navi",
     "image": "/projects/navi.jpeg",
     "style": "blue",
@@ -55,6 +59,7 @@
     ]
   },
   {
+    "type": "personal",
     "title": "Kpop Recap",
     "image": "/projects/kpoprecap.jpeg",
     "style": "red",
