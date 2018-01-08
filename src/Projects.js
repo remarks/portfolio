@@ -15,11 +15,13 @@ class Projects extends React.Component {
           <h2 className="font-poppins mt-4 md:mt-8 text-xl leading-normal">
             <Link to={project.url} rel="nofollow" className={linkStyle}>{project.title}</Link>
           </h2>
-          <p className="text-lg leading-normal mt-4">{project.desc}</p>
-          <p className="list-reset text-lg leading-normal mt-4">
+          <div className="text-base leading-normal">
+          <p className="mt-4">{project.desc}</p>
+          <p className="mt-4">
             <strong>Stack: </strong>
             {project.stack.map(item => renderStack(item))}
           </p>
+          </div>
         </div>
       )
     })
