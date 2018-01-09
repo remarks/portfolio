@@ -65,14 +65,35 @@
     ]
   },
   {
-    "type": "inactive",
+    "type": "work",
     "title": "Doyle Salewski",
     "image": "/projects/ds.jpeg",
-    "style": "blue",
+    "style": "blue-dark",
+    "client": "Ettrics",
+    "clientUrl": "https://ettrics.com",
     "url": "https://doylesalewski.ca",
-    "desc": "",
+    "desc": "Worked on responsive design implementation and front end features. Implemented modular components based on Prismic's API-based CMS.",
     "stack": [
-      "HTML"
+      "HTML",
+      "CSS/SASS",
+      "Vanilla JavaScript/ES6",
+      "jQuery",
+      "Prismic CMS"
+    ]
+  },
+  {
+    "type": "work",
+    "title": "Tiara Diadem",
+    "image": "/projects/diadem.jpeg",
+    "style": "yellow-dark",
+    "url": "https://tiaradiadem.com",
+    "desc": "Managed full-stack development for client. Built custom backend on LAMP stack with nginx reverse proxy. Receives 500K pageviews per month.",
+    "stack": [
+      "HTML",
+      "CSS",
+      "PHP",
+      "jQuery",
+      "Linux"
     ]
   },
   {

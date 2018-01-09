@@ -19,12 +19,14 @@ const Project = item => {
       </h2>
       <div className="text-base leading-normal">
         <p className="mt-4">
-          {item.client ?  <p><strong>Client: </strong> <a href={item.clientUrl} target="_blank" rel="nofollow" className="font-bold no-underline">{item.client}</a></p> : ''}
-          {item.desc}
+          {item.client ?  <p><strong>Client: </strong> <a href={item.clientUrl} target="_blank" rel="nofollow" className="font-bold no-underline border-b text-grey-darkest">{item.client}</a></p> : ''}
         </p>
-        <p className="mt-4">
+        <p>
           <strong>Stack: </strong>
           {item.stack.map(stack => renderStack(stack))}
+        </p>
+        <p className="mt-4">
+          {item.desc}
         </p>
       </div>
     </div>
