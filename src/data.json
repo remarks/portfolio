@@ -5,6 +5,8 @@
     "image": "/projects/smartcar.jpeg",
     "style": "red-darker",
     "url": "https://smartcar.com",
+    "client": "Ettrics",
+    "clientUrl": "https://ettrics.com",
     "desc": "Led development and implementation for the client's new homepage.",
     "stack": [
       "HTML",
@@ -19,6 +21,8 @@
     "image": "/projects/mesosphere.jpeg",
     "style": "purple",
     "url": "https://docs.mesosphere.com",
+    "client": "Ettrics",
+    "clientUrl": "https://ettrics.com",
     "desc": "Led responsive design implementation and developed custom features such as search indexing.",
     "stack": [
       "HTML",
@@ -34,6 +38,8 @@
     "image": "/projects/torch.jpeg",
     "style": "orange",
     "url": "https://interactive.olympicchannel.com/torch",
+    "client": "Ettrics",
+    "clientUrl": "https://ettrics.com",
     "desc": "Led responsive design implementation and animations.",
     "stack": [
       "HTML",
@@ -48,6 +54,8 @@
     "image": "/projects/btl.jpeg",
     "style": "grey-darkest",
     "url": "https://www.olympicchannel.com/light",
+    "client": "Ettrics",
+    "clientUrl": "https://ettrics.com",
     "desc": "Led development and implementation of the client's landing site.",
     "stack": [
       "HTML",
