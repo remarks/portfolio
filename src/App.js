@@ -13,6 +13,7 @@ class App extends Component {
           <ul className="text-base leading-normal px-4 mt-8 md:text-lg md:px-0">
             <li><a className="no-underline border-b pb-px" href="https://linkedin.com/in/markpinero">Linkedin</a></li>
             <li><a className="no-underline border-b pb-px" href="https://github.com/remarks">Github</a></li>
+            <li><a className="no-underline border-b pb-px" href="/resume.pdf">Resume</a></li>
             <li><a className="no-underline border-b pb-px" href="mailto:mark@markpinero.com">E-mail</a></li>
           </ul>
         </div>
