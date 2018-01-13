@@ -562,6 +562,8 @@ module.exports = {
     4: '1rem',
     6: '1.5rem',
     8: '2rem',
+    16: '4rem',
+    80: '80px'
   },
 
 
@@ -586,7 +588,6 @@ module.exports = {
     0: '0',
     4: '1rem',
     8: '2rem',
-    16: '4rem',
     80: '80px'
   },
 
@@ -633,7 +634,7 @@ module.exports = {
   | Class name: .shadow-{size?}
   |
   */
-
+  
   shadows: {
     default: '0 2px 4px 0 rgba(0,0,0,0.10)',
     md: '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',

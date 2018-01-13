@@ -2,8 +2,6 @@ import React from 'react'
 import { Link } from 'react-static'
 import data from './data.json'
 
-const renderStack = stack => <span className="stack-item">{stack}</span>
-
 const Project = item => {
   const projectImageStyle = `border-${item.style} w-full border-8 border-solid block`
   const linkStyle = `no-underline border-b text-${item.style} transition`
@@ -18,23 +16,30 @@ const Project = item => {
         </Link>
       </h2>
       <div className="text-base leading-normal">
-        <p className="mt-4">
-          {item.client ?  <p><strong>Client: </strong> <a href={item.clientUrl} target="_blank" rel="nofollow" className="font-bold no-underline border-b text-grey-darkest">{item.client}</a></p> : ''}
-        </p>
-        <p>
+        <div className="mt-4">
+          {item.client ? (
+            <p>
+              <strong>Client: </strong>{' '}
+              <a href={item.clientUrl} target="_blank" rel="nofollow" className="font-bold no-underline border-b text-grey-darkest">
+                {item.client}
+              </a>
+            </p>
+          ) : (
+            ''
+          )}
+        </div>
+        <div>
           <strong>Stack: </strong>
-          {item.stack.map(stack => renderStack(stack))}
-        </p>
-        <p className="mt-4">
-          {item.desc}
-        </p>
+          {item.stack.map(name => <span key={item.title + '-' + name} className="stack-item">{name}</span>)}
+        </div>
+        <div className="mt-4">{item.desc}</div>
       </div>
     </div>
   )
 }
 
 const renderProjects = projects => {
-  return projects.map(project => <Project {...project} />)
+  return projects.map(project => <Project key={project.url} {...project} />)
 }
 
 class Projects extends React.Component {
