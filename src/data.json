@@ -11,7 +11,7 @@
     "stack": [
       "HTML",
       "CSS/SASS",
-      "Vanilla JavaScript/ES6",
+      "Vanilla JavaScript (ES6)",
       "NodeJS"
     ]
   },
@@ -23,11 +23,11 @@
     "url": "https://docs.mesosphere.com",
     "client": "Ettrics",
     "clientUrl": "https://ettrics.com",
-    "desc": "Led responsive design implementation and developed custom features such as search indexing.",
+    "desc": "Responsible for layout and responsive design. Built search indexing utilizing Algolia.",
     "stack": [
       "HTML",
       "CSS/SASS",
-      "Vanilla JavaScript/ES6",
+      "Vanilla JavaScript (ES6)",
       "NodeJS",
       "Algolia"
     ]
@@ -40,11 +40,11 @@
     "url": "https://interactive.olympicchannel.com/torch",
     "client": "Ettrics",
     "clientUrl": "https://ettrics.com",
-    "desc": "Led responsive design implementation and animations.",
+    "desc": "Responsible for layout and responsive design.",
     "stack": [
       "HTML",
       "CSS/SASS",
-      "Vanilla JavaScript/ES6",
+      "Vanilla JavaScript (ES6)",
       "NodeJS"
     ]
   },
@@ -56,7 +56,7 @@
     "url": "https://www.olympicchannel.com/light",
     "client": "Ettrics",
     "clientUrl": "https://ettrics.com",
-    "desc": "Led development and implementation of the client's landing site.",
+    "desc": "Led development and implementation for the client's landing site.",
     "stack": [
       "HTML",
       "CSS/SASS",
@@ -72,11 +72,11 @@
     "client": "Ettrics",
     "clientUrl": "https://ettrics.com",
     "url": "https://doylesalewski.ca",
-    "desc": "Worked on responsive design implementation and front end features. Implemented modular components based on Prismic's API-based CMS.",
+    "desc": "Responsible for layout and responsive design. Built modular front-end components and multilingual features on NodeJS and Prismic.",
     "stack": [
       "HTML",
       "CSS/SASS",
-      "Vanilla JavaScript/ES6",
+      "Vanilla JavaScript (ES6)",
       "jQuery",
       "Prismic CMS"
     ]
@@ -87,13 +87,15 @@
     "image": "/projects/diadem.jpeg",
     "style": "yellow-dark",
     "url": "https://tiaradiadem.com",
-    "desc": "Managed full-stack development for client. Built custom backend on LAMP stack with nginx reverse proxy. Receives 500K pageviews per month.",
+    "desc": "Managing full-stack development for client. Built custom backend on LAMP stack with nginx reverse proxy.",
     "stack": [
       "HTML",
       "CSS",
       "PHP",
+      "MySQL",
       "jQuery",
-      "Linux"
+      "AWS S3",
+      "DevOps"
     ]
   },
   {

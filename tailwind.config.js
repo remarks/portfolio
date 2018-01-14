@@ -410,6 +410,7 @@ module.exports = {
   */
 
   borderRadius: {
+    default: '.25rem',
     full: '9999px',
   },
 
@@ -753,7 +754,7 @@ module.exports = {
     cursor: ['responsive'],
     display: ['responsive'],
     flexbox: ['responsive'],
-    float: false,
+    float: ['responsive'],
     fonts: ['responsive'],
     fontWeights: ['responsive'],
     height: ['responsive'],
@@ -764,7 +765,7 @@ module.exports = {
     maxWidth: ['responsive'],
     minHeight: ['responsive'],
     minWidth: ['responsive'],
-    negativeMargin: false,
+    negativeMargin: ['responsive'],
     opacity: false,
     overflow: false,
     padding: ['responsive'],
