@@ -66,6 +66,22 @@
   },
   {
     "type": "work",
+    "title": "Assembly",
+    "image": "/projects/assembly.jpeg",
+    "style": "teal-light",
+    "client": "Ettrics",
+    "clientUrl": "https://ettrics.com",
+    "url": "https://assembly.com",
+    "desc": "Responsible for layout and responsive design on new landing pages.",
+    "stack": [
+      "HTML",
+      "CSS/SASS",
+      "Vanilla JavaScript (ES6)",
+      "jQuery"
+    ]
+  },
+  {
+    "type": "work",
     "title": "Doyle Salewski",
     "image": "/projects/ds.jpeg",
     "style": "blue-dark",
