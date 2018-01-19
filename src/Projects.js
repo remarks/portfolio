@@ -4,7 +4,7 @@ import data from './data.json'
 
 const Project = item => {
   const projectImageStyle = `border-${item.style} w-full border-8 border-solid block`
-  const linkStyle = `no-underline border-b text-${item.style} transition`
+  const linkStyle = `no-underline text-${item.style}`
   return (
     <div className="my-8">
       <Link to={item.url} rel="nofollow">
@@ -20,7 +20,7 @@ const Project = item => {
           {item.client ? (
             <p>
               <strong>Client: </strong>{' '}
-              <a href={item.clientUrl} target="_blank" rel="nofollow" className="font-bold no-underline border-b text-grey-darkest">
+              <a href={item.clientUrl} target="_blank" rel="nofollow" className="font-bold no-underline text-grey-darkest">
                 {item.client}
               </a>
             </p>

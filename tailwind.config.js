@@ -333,7 +333,8 @@ module.exports = {
     'yellow-dark',
     'blue-dark',
     'grey-darkest',
-    'teal-light'
+    'teal-light',
+    'pink'
   ]),
 
 
@@ -350,7 +351,7 @@ module.exports = {
   |
   */
 
-  backgroundColors: _.pick(colors,['indigo-darker', 'indigo']),
+  backgroundColors: _.pick(colors,['indigo-darker', 'indigo', 'pink']),
 
 
   /*
@@ -391,7 +392,7 @@ module.exports = {
   |
   */
 
-  borderColors: Object.assign({ default: colors['grey-light'] }, _.pick(colors,['teal-light','indigo','orange','purple', 'red-darker', 'blue', 'blue-dark', 'red', 'grey-light', 'grey-darkest', 'yellow-dark'])),
+  borderColors: Object.assign({ default: colors['grey-light'] }, _.pick(colors,['teal-light','indigo','orange','purple', 'red-darker', 'blue', 'blue-dark', 'red', 'grey-light', 'grey-darkest', 'yellow-dark', 'pink'])),
 
 
   /*

@@ -18,8 +18,12 @@ html {
 }
 
 a {
-  @apply .text-indigo;
+  @apply .text-pink;
   transition: color 0.3s ease-in;
+}
+
+.transition {
+  transition: background 0.3s ease-in;
 }
 
 a:hover {
