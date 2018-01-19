@@ -8,7 +8,7 @@ import './app.css'
 class App extends Component {
   render() {
     return (
-      <div className="layout px-8 md:px-16 pt-16 md:pt-80">
+      <div className="layout px-8 md:px-16 pt-16 md:py-80">
         <Menu />
         <div className="content w-full max-w-2xl text-grey-darkest">
           <Hero />
