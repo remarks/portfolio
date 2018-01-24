@@ -19,7 +19,6 @@ export default {
             <title>Mark Pinero</title>
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <link href="https://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet" />
             {renderMeta.styleTags}
           </Head>
           <Body className="border-t-20 border-pink md:border-l-20 md:border-t-0 font-sans text-xl">
