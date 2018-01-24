@@ -7,7 +7,7 @@
     "url": "https://smartcar.com",
     "client": "Ettrics",
     "clientUrl": "https://ettrics.com",
-    "desc": "Led development and implementation for the client's new homepage.",
+    "desc": "Led development and implementation for initial iteration of the client's new homepage.",
     "stack": [
       "HTML",
       "CSS/SASS",
