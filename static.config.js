@@ -21,7 +21,7 @@ export default {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             {renderMeta.styleTags}
           </Head>
-          <Body className="border-t-20 border-pink md:border-l-20 md:border-t-0 font-sans text-xl">
+          <Body className="border-t-20 border-red md:border-l-20 md:border-t-0 font-sans text-xl">
             {children}
             <script src="//load.sumome.com/" data-sumo-site-id="bfc325c4f716f1bb64356b00d0c06b5c4e1105186abcd3685a423887f1b996a0" async="async"></script>
           </Body>

@@ -18,7 +18,7 @@ html {
 }
 
 a {
-  @apply .text-pink;
+  @apply .text-red;
   transition: color 0.3s ease-in;
 }
 
