@@ -88,7 +88,7 @@
     "client": "Ettrics",
     "clientUrl": "https://ettrics.com",
     "url": "https://doylesalewski.ca",
-    "desc": "Responsible for layout and responsive design. Built modular front-end components and multilingual features on NodeJS and Prismic.",
+    "desc": "Responsible for layout and responsive design. Built modular front-end components and multilingual features on NodeJS and Prismic.io.",
     "stack": [
       "HTML",
       "CSS/SASS",
@@ -99,7 +99,7 @@
   },
   {
     "type": "work",
-    "title": "Tiara Diadem",
+    "title": "Diadem",
     "image": "/projects/diadem.jpeg",
     "style": "yellow-dark",
     "url": "https://tiaradiadem.com",
