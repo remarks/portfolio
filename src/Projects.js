@@ -10,12 +10,12 @@ const Project = item => {
       <Link to={item.url} rel="nofollow">
         <img src={item.image} className={projectImageStyle} />
       </Link>
-      <h2 className="mt-4 md:mt-8 text-xl leading-normal">
+      <h2 className="mt-4 md:mt-8 text-xl md:text-2xl leading-normal">
         <Link to={item.url} rel="nofollow" className={linkStyle}>
           {item.title}
         </Link>
       </h2>
-      <div className="text-base leading-normal">
+      <div className="text-base md:text-lg leading-normal">
         <div className="mt-4">
           {item.client ? (
             <p>
