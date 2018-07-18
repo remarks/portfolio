@@ -3,27 +3,29 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "engines": { "node": "8.9.4" },
+  "engines": {
+    "node": "8.9.4"
+  },
   "scripts": {
     "start": "react-static start",
     "build": "react-static build",
     "serve": "serve dist -p 3000"
   },
   "dependencies": {
-    "axios": "^0.16.2",
+    "axios": "^0.18.0",
     "markdown": "^0.5.0",
-    "markdown-loader": "^2.0.1",
-    "marked": "^0.3.9",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-feather": "^1.0.8",
+    "markdown-loader": "^3.0.0",
+    "marked": "^0.4.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-feather": "^1.1.1",
     "react-helmet": "^5.2.0",
-    "react-router": "^4.2.0",
-    "react-static": "^4.8.3",
-    "tailwindcss": "^0.3.0"
+    "react-router": "^4.3.1",
+    "react-static": "^5.9.7",
+    "tailwindcss": "^0.6.4"
   },
   "devDependencies": {
-    "eslint-config-react-tools": "1.x.x",
-    "serve": "^6.1.0"
+    "eslint-config-react-tools": "1.1.6",
+    "serve": "^9.2.0"
   }
 }
