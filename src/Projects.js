@@ -16,21 +16,11 @@ const Project = item => {
         </Link>
       </h2>
       <div className="text-base md:text-lg leading-normal">
-        <div className="mt-4">
-          {item.client ? (
-            <p>
-              <strong>Client: </strong>{' '}
-              <a href={item.clientUrl} target="_blank" rel="nofollow" className="font-bold no-underline text-grey-darkest">
-                {item.client}
-              </a>
-            </p>
-          ) : (
-            ''
-          )}
-        </div>
         <div>
           <strong>Stack: </strong>
-          {item.stack.map(name => <span key={item.title + '-' + name} className="stack-item">{name}</span>)}
+          <span class="stack-item">
+            {item.stack.slice(0, -1).join(', ')}, {item.stack.slice(-1)[0]}
+          </span>
         </div>
         <div className="mt-4">{item.desc}</div>
       </div>
