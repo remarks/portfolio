@@ -8,6 +8,9 @@ class Hero extends Component {
         <p className="mt-8 lg:text-2xl">
           I'm a Front End Developer from Los Angeles, CA, currently working for <a href="https://humnutrition.com" className="no-underline font-bold text-red" rel="nofollow">HUM Nutrition</a>. Working with creative agencies and various startups, I've developed a keen eye for user experience and design.
         </p>
+        <p className="mt-8 lg:text-2xl">
+          <a href="mailto:mark@markpinero.com">I'm available for consulting</a>.
+        </p>
       </div>
     )
   }

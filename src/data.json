@@ -84,54 +84,5 @@
       "jQuery",
       "Prismic CMS"
     ]
-  },
-  {
-    "type": "work",
-    "title": "Diadem",
-    "image": "/projects/diadem.jpeg",
-    "style": "yellow-dark",
-    "url": "https://tiaradiadem.com",
-    "desc": "Managing full-stack development for client. Built custom backend on LAMP stack with nginx reverse proxy.",
-    "stack": [
-      "HTML",
-      "CSS",
-      "PHP",
-      "MySQL",
-      "jQuery",
-      "AWS S3",
-      "DevOps"
-    ]
-  },
-  {
-    "type": "personal",
-    "title": "Navi",
-    "image": "/projects/navi.jpeg",
-    "style": "blue",
-    "url": "https://navi.netlify.com",
-    "desc": "Led product design and development of full-stack webapp.",
-    "stack": [
-      "HTML",
-      "CSS/SASS",
-      "React",
-      "Redux",
-      "NodeJS",
-      "MongoDB"
-    ]
-  },
-  {
-    "type": "personal",
-    "title": "Kpop Recap",
-    "image": "/projects/kpoprecap.jpeg",
-    "style": "red",
-    "url": "https://kpoprecap.com",
-    "desc": "Led product design and development of full-stack webapp.",
-    "stack": [
-      "HTML",
-      "CSS/SASS",
-      "React",
-      "Redux",
-      "NodeJS",
-      "MongoDB"
-    ]
   }
 ]

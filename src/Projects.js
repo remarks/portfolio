@@ -43,10 +43,6 @@ class Projects extends React.Component {
           <h1 className="text-3xl lg:text-4xl lg:w-3/4">Work Portfolio</h1>
           <div className="grid">{work}</div>
         </div>
-        <div className="personal mt-80">
-          <h1 className="text-3xl lg:text-4xl lg:w-3/4">Personal Projects</h1>
-          <div className="grid">{personal}</div>
-        </div>
       </div>
     )
   }
