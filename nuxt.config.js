@@ -28,6 +28,19 @@ export default {
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss'
   ],
+
+  purgeCSS: {
+    whitelist: (whitelist) => {
+      return whitelist.concat([
+        'text-red-800',
+        'text-purple-600',
+        'text-orange-500',
+        'text-gray-900',
+        'text-teal-300',
+        'text-blue-600'
+      ])
+    }
+  },
   /*
    ** Nuxt.js modules
    */
@@ -39,6 +52,7 @@ export default {
     /*
      ** You can extend webpack config here
      */
+    extractCSS: true,
     extend(config, ctx) {}
   }
 }
