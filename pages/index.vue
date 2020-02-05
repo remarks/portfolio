@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <div class="max-w-2xl text-xl md:text-2xl">
-      <h1 class="leading-tight text-4xl md:text-5xl font-extrabold">
+    <div class="max-w-2xl text-xl lg:text-2xl">
+      <h1 class="leading-tight text-4xl lg:text-5xl font-extrabold">
         Hi, I'm Mark Pinero.
       </h1>
       <p class="mt-4">

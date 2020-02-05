@@ -32,7 +32,7 @@ a {
   grid-template-rows: max-content 1fr;
 }
 
-@screen md {
+@screen lg {
   .page-wrapper {
     @apply p-20;
     border-top-width: 0;

@@ -16,7 +16,7 @@
         </a>
       </li>
       <li><a href="/resume.pdf" target="_blank" rel="noopener">Resume</a></li>
-      <li class="md:pt-6"><a href="mailto:mark@markpinero.com">Contact</a></li>
+      <li class="lg:pt-6"><a href="mailto:mark@markpinero.com">Contact</a></li>
     </ul>
   </div>
 </template>
@@ -36,7 +36,7 @@
   grid-template-columns: repeat(4, max-content);
 }
 
-@screen md {
+@screen lg {
   .sidebar {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(max-content);
