@@ -4,9 +4,6 @@
   "description": "My shining Nuxt.js project",
   "author": "Mark Pinero",
   "private": true,
-  "engines": {
-    "node": "8.9.0"
-  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
