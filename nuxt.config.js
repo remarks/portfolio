@@ -33,9 +33,10 @@ export default {
 
   purgeCSS: {
     whitelist: (whitelist) => {
-      const projectColors = work.map((p) => `text-${p.style}`)
+      const textColors = work.map((p) => `text-${p.style}`)
+      const borderColors = work.map((p) => `border-${p.style}`)
 
-      return whitelist.concat(projectColors)
+      return [...whitelist, ...textColors, ...borderColors]
     }
   },
   /*
