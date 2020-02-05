@@ -1,3 +1,5 @@
+import work from './data/work.json'
+
 export default {
   mode: 'universal',
   /*
@@ -31,14 +33,9 @@ export default {
 
   purgeCSS: {
     whitelist: (whitelist) => {
-      return whitelist.concat([
-        'text-red-800',
-        'text-purple-600',
-        'text-orange-500',
-        'text-gray-900',
-        'text-teal-300',
-        'text-blue-600'
-      ])
+      const projectColors = work.map((p) => `text-${p.style}`)
+
+      return whitelist.concat(projectColors)
     }
   },
   /*
