@@ -1,0 +1,56 @@
+[
+  {
+    "type": "work",
+    "title": "Smartcar",
+    "image": "smartcar.jpeg",
+    "style": "red-800",
+    "url": "https://smartcar.com",
+    "desc": "Led development and implementation for initial iteration of the client's new homepage.",
+    "stack": ["HTML", "CSS/SASS", "Vanilla JavaScript (ES6)", "NodeJS"]
+  },
+  {
+    "type": "work",
+    "title": "Mesosphere DC/OS Docs",
+    "image": "mesosphere.jpeg",
+    "style": "purple-600",
+    "url": "https://docs.mesosphere.com",
+    "desc": "Responsible for layout and responsive design. Built search indexing utilizing Algolia.",
+    "stack": ["HTML", "CSS/SASS", "Vanilla JavaScript (ES6)", "NodeJS", "Algolia"]
+  },
+  {
+    "type": "work",
+    "title": "Olympic Channel: Interactive Torch",
+    "image": "torch.jpeg",
+    "style": "orange-500",
+    "url": "https://interactive.olympicchannel.com/torch",
+    "desc": "Responsible for layout and responsive design.",
+    "stack": ["HTML", "CSS/SASS", "Vanilla JavaScript (ES6)", "NodeJS"]
+  },
+  {
+    "type": "work",
+    "title": "Olympic Channel: Become the Light",
+    "image": "btl.jpeg",
+    "style": "gray-900",
+    "url": "https://www.olympicchannel.com/light",
+    "desc": "Led development and implementation for the client's landing site.",
+    "stack": ["HTML", "CSS/SASS", "jQuery", "NodeJS"]
+  },
+  {
+    "type": "work",
+    "title": "Assembly",
+    "image": "assembly.jpeg",
+    "style": "teal-300",
+    "url": "https://assembly.com",
+    "desc": "Responsible for layout and responsive design on new landing pages.",
+    "stack": ["HTML", "CSS/SASS", "Vanilla JavaScript (ES6)", "jQuery"]
+  },
+  {
+    "type": "work",
+    "title": "Doyle Salewski",
+    "image": "ds.jpeg",
+    "style": "blue-600",
+    "url": "https://doylesalewski.ca",
+    "desc": "Responsible for layout and responsive design. Built modular front-end components and multilingual features on NodeJS and Prismic.io.",
+    "stack": ["HTML", "CSS/SASS", "Vanilla JavaScript (ES6)", "jQuery", "Prismic CMS"]
+  }
+]

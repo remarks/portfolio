@@ -1,73 +1,38 @@
 <template>
   <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        portfolio
+    <div class="max-w-2xl text-xl md:text-2xl">
+      <h1 class="leading-tight text-4xl md:text-5xl font-extrabold">
+        Hi, I'm Mark Pinero.
       </h1>
-      <h2 class="subtitle">
-        My shining Nuxt.js project
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
+      <p class="mt-4">
+        I'm a Senior Front End Developer specializing in Vue.js, currently working for
+        <a href="https://humnutrition.com" class="font-extrabold" rel="noopener">
+          HUM Nutrition
         </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+        in Los Angeles, CA.
+      </p>
+      <p class="mt-4">
+        Working with creative agencies and various startups, I have a keen eye for UX and design.
+      </p>
+      <p v-if="consulting" class="mt-4">
+        <a href="mailto:mark@markpinero.com">I'm available for consulting.</a>
+      </p>
     </div>
+
+    <Work class="mt-8" />
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Work from '~/components/Work'
 
 export default {
   components: {
-    Logo
-  }
+    Work
+  },
+
+  data: () => ({
+    consulting: true
+  })
 }
 </script>
-
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>

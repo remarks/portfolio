@@ -1,55 +1,46 @@
 <template>
-  <div>
+  <div class="page-wrapper">
+    <Sidebar />
     <nuxt />
   </div>
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+<script>
+import Sidebar from '~/components/Sidebar'
+
+export default {
+  components: {
+    Sidebar
+  }
+}
+</script>
+
+<style lang="postcss">
+body {
+  @apply text-gray-800;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
+a {
+  @apply text-red-600;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.page-wrapper {
+  @apply border-red-600 min-h-screen p-8;
+  border-top-width: 20px;
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-rows: max-content 1fr;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+@screen md {
+  .page-wrapper {
+    @apply p-20;
+    border-top-width: 0;
+    border-left-width: 20px;
+    grid-template-areas: 'sidebar' 'content';
+    grid-template-columns: 200px auto;
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
+  }
 }
 </style>
