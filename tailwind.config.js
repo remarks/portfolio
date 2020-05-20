@@ -15,12 +15,7 @@ module.exports = {
     enabled: process.env.NODE_ENV === 'production',
     content: ['components/**/*.vue', 'layouts/**/*.vue', 'pages/**/*.vue', 'plugins/**/*.js', 'nuxt.config.js'],
     options: {
-      whitelist: (whitelist) => {
-        const textColors = work.map((p) => `text-${p.style}`)
-        const borderColors = work.map((p) => `border-${p.style}`)
-
-        return [...whitelist, ...textColors, ...borderColors]
-      }
+      whitelist: [...work.map((p) => `text-${p.style}`), ...work.map((p) => `border-${p.style}`)]
     }
   }
 }
