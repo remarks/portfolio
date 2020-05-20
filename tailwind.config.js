@@ -14,11 +14,13 @@ module.exports = {
   purge: {
     enabled: process.env.NODE_ENV === 'production',
     content: ['components/**/*.vue', 'layouts/**/*.vue', 'pages/**/*.vue', 'plugins/**/*.js', 'nuxt.config.js'],
-    whitelist: (whitelist) => {
-      const textColors = work.map((p) => `text-${p.style}`)
-      const borderColors = work.map((p) => `border-${p.style}`)
+    options: {
+      whitelist: (whitelist) => {
+        const textColors = work.map((p) => `text-${p.style}`)
+        const borderColors = work.map((p) => `border-${p.style}`)
 
-      return [...whitelist, ...textColors, ...borderColors]
+        return [...whitelist, ...textColors, ...borderColors]
+      }
     }
   }
 }
