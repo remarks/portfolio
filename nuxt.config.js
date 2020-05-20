@@ -1,5 +1,3 @@
-import work from './data/work.json'
-
 export default {
   mode: 'universal',
   /*
@@ -31,14 +29,6 @@ export default {
     '@nuxtjs/tailwindcss'
   ],
 
-  purgeCSS: {
-    whitelist: (whitelist) => {
-      const textColors = work.map((p) => `text-${p.style}`)
-      const borderColors = work.map((p) => `border-${p.style}`)
-
-      return [...whitelist, ...textColors, ...borderColors]
-    }
-  },
   /*
    ** Nuxt.js modules
    */
