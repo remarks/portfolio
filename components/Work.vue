@@ -5,7 +5,7 @@
     </h1>
     <ul class="work-grid">
       <li v-for="(project, i) in projects" :key="i">
-        <a :href="project.url" rel="nofollow">
+        <a :href="project.url" rel="nofollow" target="_blank">
           <img :src="'/work/' + project.image" :class="'border-' + project.style" class="block mb-4 border-8" />
           <h2 :class="'text-' + project.style" class="text-xl font-bold leading-normal no-underline lg:text-2xl">
             {{ project.title }}
