@@ -1,5 +1,5 @@
 <template>
-  <section class="space-y-8 portfolio">
+  <section id="portfolio" class="space-y-8">
     <h1 class="text-3xl font-extrabold leading-none tracking-tight lg:text-4xl">
       Work
     </h1>

@@ -1,6 +1,6 @@
 <template>
-  <div class="container space-y-8 md:space-y-16">
-    <div class="max-w-2xl space-y-4 text-xl leading-snug lg:text-2xl lg:space-y-6">
+  <main class="container space-y-8 md:space-y-16">
+    <header id="introduction" class="max-w-2xl space-y-4 text-xl leading-snug lg:text-2xl lg:space-y-6">
       <h1 class="text-4xl font-extrabold leading-none tracking-tight lg:text-5xl">
         Hi, I'm Mark Pinero.
       </h1>
@@ -17,10 +17,10 @@
       <p v-if="consulting">
         <a href="mailto:mark@markpinero.com">I'm available for consulting.</a>
       </p>
-    </div>
+    </header>
 
     <Work />
-  </div>
+  </main>
 </template>
 
 <script>

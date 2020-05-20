@@ -21,7 +21,11 @@ body {
 }
 
 a {
-  @apply text-red-600;
+  @apply text-red-600 transition-all duration-500 ease-in-out;
+
+  &:hover {
+    @apply text-red-900;
+  }
 }
 
 .page-wrapper {

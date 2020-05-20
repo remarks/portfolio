@@ -1,5 +1,5 @@
 <template>
-  <div class="relative spacing-y-8">
+  <nav class="relative spacing-y-8">
     <!-- <ul class="text-xl font-bold sidebar">
       <li>Work</li>
       <li>Blog</li>
@@ -18,7 +18,7 @@
       <li><a href="/resume.pdf" target="_blank" rel="noopener">Resume</a></li>
       <li class="lg:pt-6"><a href="mailto:mark@markpinero.com">Contact</a></li>
     </ul>
-  </div>
+  </nav>
 </template>
 
 <style lang="postcss">
