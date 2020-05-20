@@ -1,25 +1,25 @@
 <template>
-  <div class="container">
-    <div class="max-w-2xl text-xl lg:text-2xl">
-      <h1 class="leading-tight text-4xl lg:text-5xl font-extrabold">
+  <div class="container space-y-8 md:space-y-16">
+    <div class="max-w-2xl space-y-4 text-xl leading-snug lg:text-2xl lg:space-y-6">
+      <h1 class="text-4xl font-extrabold leading-none tracking-tight lg:text-5xl">
         Hi, I'm Mark Pinero.
       </h1>
-      <p class="mt-4">
-        I'm a Senior Front End Developer specializing in Vue.js, currently working for
+      <p>
+        I'm a Senior Front End Developer specializing in <strong>Vue.js</strong>, currently working for
         <a href="https://humnutrition.com" class="font-extrabold" rel="noopener">
           HUM Nutrition
         </a>
         in Los Angeles, CA.
       </p>
-      <p class="mt-4">
-        Working with creative agencies and various startups, I have a keen eye for UX and design.
+      <p>
+        Working with various creative agencies and startups, I have a keen eye for user experience and design.
       </p>
-      <p v-if="consulting" class="mt-4">
+      <p v-if="consulting">
         <a href="mailto:mark@markpinero.com">I'm available for consulting.</a>
       </p>
     </div>
 
-    <Work class="mt-8" />
+    <Work />
   </div>
 </template>
 

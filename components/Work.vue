@@ -1,13 +1,13 @@
 <template>
-  <section class="portfolio">
-    <h1 class="leading-tight text-3xl lg:text-4xl font-extrabold">
+  <section class="space-y-8 portfolio">
+    <h1 class="text-3xl font-extrabold leading-none tracking-tight lg:text-4xl">
       Work
     </h1>
-    <ul class="mt-8 work-grid">
+    <ul class="work-grid">
       <li v-for="(project, i) in projects" :key="i">
         <a :href="project.url" rel="nofollow">
-          <img :src="'/work/' + project.image" :class="'border-' + project.style" class="block border-8 mb-4" />
-          <h2 :class="'text-' + project.style" class="text-xl lg:text-2xl font-bold leading-normal no-underline">
+          <img :src="'/work/' + project.image" :class="'border-' + project.style" class="block mb-4 border-8" />
+          <h2 :class="'text-' + project.style" class="text-xl font-bold leading-normal no-underline lg:text-2xl">
             {{ project.title }}
           </h2>
         </a>

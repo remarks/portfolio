@@ -1,6 +1,6 @@
 <template>
-  <div class="relative stack">
-    <!-- <ul class="sidebar font-bold text-xl">
+  <div class="relative spacing-y-8">
+    <!-- <ul class="text-xl font-bold sidebar">
       <li>Work</li>
       <li>Blog</li>
     </ul> -->
@@ -24,10 +24,6 @@
 <style lang="postcss">
 :root {
   --stack: 1rem;
-}
-
-.stack > * + * {
-  margin-top: 2rem;
 }
 
 .sidebar {
