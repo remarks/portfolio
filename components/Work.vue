@@ -32,7 +32,7 @@ export default {
   grid-gap: 2rem;
 }
 
-@screen lg {
+@screen md {
   .work-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 4rem;
